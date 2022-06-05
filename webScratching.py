@@ -5,20 +5,17 @@ from bs4 import BeautifulSoup
 
 
 # Extract the link and the name country of the websites from text file
-def extractWebsite(indices, links, countries):
-    for index in indices:
-        i = int(index) % 5
-        Web = Website(links[int(index) - 1], countries[int(index) - 1] + str(i))
-        Web.createText()
-
-
 def extractWebsite(indices, links, countries, sheet):
     if sheet:
         for index in indices:
             i = int(index[0]) % 5
             Web = Website(links[0], countries[0] + str(i))
             Web.createText()
-
+    else:
+        for index in indices:
+            i = int(index) % 5
+            Web = Website(links[int(index) - 1], countries[int(index) - 1] + str(i))
+            Web.createText()
 
 # Extract word from website
 class Website:
@@ -35,10 +32,12 @@ class Website:
         text = "Title: " + doc.title.text
 
         for x in range(len(doc.body.findAll("p"))):
-            text += str(doc.body.findAll("p")[x].text)
-            text += "\n"
+            line = str(doc.body.findAll("p")[x].text).replace("\n", " ")
+            if line != "":
+                text += line
+                text += "\n"
 
-        self.country += ".txt"
+        self.country = "Data file\\" + self.country + ".txt"
         with open(self.country, 'w') as f:
             f.write(text)
 
@@ -50,7 +49,7 @@ def readExcel():
     indices = df.get("Index")
     links = df.get("Link")
     countries = df.get("Country")
-    extractWebsite(indices, links, countries)
+    extractWebsite(indices, links, countries, False)
 
 
 # read data from google sheet
@@ -70,5 +69,5 @@ def readGoogleSheet():
 
 
 # main function
-# readExcel()
-readGoogleSheet()
+readExcel()
+# readGoogleSheet()
