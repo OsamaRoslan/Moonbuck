@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a381570-0ba6-45be-9dd8-98f9f33438c0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USA1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USA2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Creds.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/webScratching.py" beforeDir="false" afterPath="$PROJECT_DIR$/webScratching.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

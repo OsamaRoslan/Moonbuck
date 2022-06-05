@@ -44,8 +44,8 @@ class Website:
 
 # read data from excel
 def readExcel():
-    print("Read from Excel...\n")
-    df = pd.read_excel(r'Data.xlsx')
+    print("Read from Excel...")
+    df = pd.read_excel(r'Database\\Data.xlsx')
     indices = df.get("Index")
     links = df.get("Link")
     countries = df.get("Country")
@@ -54,9 +54,9 @@ def readExcel():
 
 # read data from google sheet
 def readGoogleSheet():
-    print("Read from Google Sheet...\n")
+    print("Read from Google Sheet...")
 
-    sa = gspread.service_account("Creds.json")
+    sa = gspread.service_account("Database\\Creds.json")
     sh = sa.open("Data")
 
     sheet = sh.worksheet("Sheet1")
