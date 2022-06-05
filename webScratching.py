@@ -1,13 +1,23 @@
 import requests
+import gspread
+import pandas as pd
 from bs4 import BeautifulSoup
 
 
 # Extract the link and the name country of the websites from text file
-def openWebsite(input, i):
-    line = input.split(", ")
-    index = i % 5
-    Web = Website(line[0], line[1].replace("\n", "") + str(index))
-    Web.createText()
+def extractWebsite(indices, links, countries):
+    for index in indices:
+        i = int(index) % 5
+        Web = Website(links[int(index) - 1], countries[int(index) - 1] + str(i))
+        Web.createText()
+
+
+def extractWebsite(indices, links, countries, sheet):
+    if sheet:
+        for index in indices:
+            i = int(index[0]) % 5
+            Web = Website(links[0], countries[0] + str(i))
+            Web.createText()
 
 
 # Extract word from website
@@ -33,10 +43,32 @@ class Website:
             f.write(text)
 
 
-# main
-with open('Data.txt') as f:
-    lines = f.readlines()
-count = 0
-for line in lines:
-    count += 1
-    openWebsite(line, count)
+# read data from excel
+def readExcel():
+    print("Read from Excel...\n")
+    df = pd.read_excel(r'Data.xlsx')
+    indices = df.get("Index")
+    links = df.get("Link")
+    countries = df.get("Country")
+    extractWebsite(indices, links, countries)
+
+
+# read data from google sheet
+def readGoogleSheet():
+    print("Read from Google Sheet...\n")
+
+    sa = gspread.service_account("Creds.json")
+    sh = sa.open("Data")
+
+    sheet = sh.worksheet("Sheet1")
+    indices = sheet.get("A2:A26")
+    links = sheet.get("B2:B26")
+    countries = sheet.get("C2:C26")
+
+    for i in range(len(indices)):
+        extractWebsite(indices[i], links[i], countries[i], True)
+
+
+# main function
+# readExcel()
+readGoogleSheet()
