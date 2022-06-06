@@ -2,6 +2,7 @@ import requests
 import gspread
 import pandas as pd
 from bs4 import BeautifulSoup
+OS = ""
 
 
 # Extract the link and the name country of the websites from text file
@@ -43,9 +44,13 @@ class Website:
 
 
 # read data from excel
-def readExcel():
+def readExcel(OS):
     print("Read from Excel...")
-    df = pd.read_excel(r'Database\\Data.xlsx')
+    if OS == "mac":
+        df = pd.read_excel(r'Database//Data.xlsx')
+    if OS == "windows":
+        df = pd.read_excel(r'Database\\Data.xlsx')
+
     indices = df.get("Index")
     links = df.get("Link")
     countries = df.get("Country")
@@ -53,12 +58,15 @@ def readExcel():
 
 
 # read data from google sheet
-def readGoogleSheet():
+def readGoogleSheet(OS):
     print("Read from Google Sheet...")
 
-    sa = gspread.service_account("Database\\Creds.json")
-    sh = sa.open("Data")
+    if OS == "mac":
+        sa = gspread.service_account("Database//Creds.json")
+    if OS == "windows":
+        sa = gspread.service_account("Database\\Creds.json")
 
+    sh = sa.open("Data")
     sheet = sh.worksheet("Sheet1")
     indices = sheet.get("A2:A26")
     links = sheet.get("B2:B26")
@@ -69,5 +77,15 @@ def readGoogleSheet():
 
 
 # main function
-readExcel()
-# readGoogleSheet()
+answer = input("Choose your operating system (1-windows/ 2-mac): ")
+if answer == 1:
+    OS = "windows"
+    readExcel(OS)
+    readGoogleSheet(OS)
+if answer == 2:
+    OS = "mac"
+    readExcel(OS)
+    readGoogleSheet(OS)
+else:
+    print("This Code Cannot Be Supported by Your Operating System")
+
