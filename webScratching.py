@@ -37,7 +37,7 @@ class Website:
                 text += line
                 text += "\n"
 
-        self.country = "Data file\\" + self.country + ".txt"
+        self.country = "Data file//" + self.country + ".txt"
         with open(self.country, 'w') as f:
             f.write(text)
 
@@ -56,7 +56,7 @@ def readExcel():
 def readGoogleSheet():
     print("Read from Google Sheet...")
 
-    sa = gspread.service_account("Database\\Creds.json")
+    sa = gspread.service_account("Database//Creds.json")
     sh = sa.open("Data")
 
     sheet = sh.worksheet("Sheet1")
@@ -69,5 +69,5 @@ def readGoogleSheet():
 
 
 # main function
-readExcel()
-# readGoogleSheet()
+# readExcel()
+readGoogleSheet()
