@@ -204,7 +204,7 @@ for y in range(25):
     for i in range(len(neutralFound)):
         f.write(neutralFound[i] + ",")
 
-f.close()
+    f.close()
 
 
 #Amirah start code here.....
