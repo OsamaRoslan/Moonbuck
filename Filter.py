@@ -105,8 +105,8 @@ def magic(lst):
 # Driver code
 # Call function to read from text file
 
-for y in range(1):
-    fileName = "USA" + str(y+1)
+for y in range(25):
+    fileName = "DATA" + str(y+1)
     extracted = []
     positiveWords = []
     negativeWords = []
@@ -204,7 +204,9 @@ for y in range(1):
     for i in range(len(neutralFound)):
         f.write(neutralFound[i] + ",")
 
-    f.close()
+f.close()
+
 
 #Amirah start code here.....
+
 
