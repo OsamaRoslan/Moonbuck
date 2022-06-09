@@ -194,3 +194,11 @@ print("Neutral: ", neutralFound)
 print("Positive Word: ", len(positiveFound))
 print("Negative Word: ", len(negativeFound))
 print("Neutral Word: ", len(neutralFound))
+
+number_count = [len(positiveFound), len(negativeFound), len(neutralFound)]
+type_word = ["Positive", "Negative", "Neutral"]
+
+import plotly.express as px
+
+fig=px.bar(data_frame=None, x=type_word, y=number_count)
+fig.show()
