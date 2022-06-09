@@ -14,14 +14,11 @@ def extractWebsite(indices, links, countries, sheet):
             i = int(index[0]) % 5
             if i == 0:
                 i = 5
-            Web = Website(links[0], countries[0] + str(i))
+            Web = Website(links[0], "Data" + index)
             Web.createText()
     else:
         for index in indices:
-            i = int(index) % 5
-            if i == 0:
-                i = 5
-            Web = Website(links[int(index) - 1], countries[int(index) - 1] + str(i))
+            Web = Website(links[int(index) - 1], "Data" + index)
             Web.createText()
 
 
