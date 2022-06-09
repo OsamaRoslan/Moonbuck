@@ -1,0 +1,63 @@
+Title: UK economy latest - Office for National StatisticsWe would like to use cookies to collect information about how you use ons.gov.uk.
+We use this information to make the website work as well as possible and improve our services.
+ You’ve accepted all cookies. You can change your cookie settings at any time. Hide 
+  Find out more about census 
+A roundup of the latest data and analysis on the UK economy, business and jobs following Brexit and during the coronavirus (COVID-19) pandemic. 
+This page provides commentary and charts on the latest changes in the UK economy, using novel and rapid data sources as well as official statistics. 
+We explain the reasons behind each change as much as possible, although it can be difficult to separate the impacts of different things such as Brexit and COVID-19. 
+For an overview of our main economic indicators, visit our dashboard.
+ Latest headlines 9 June 2022  Lower transport use under lockdown led to record drop in emissions Platinum Jubilee week sees rises in spending and dining out  6 June 2022  Household saving rose sharply during the coronavirus (COVID-19) pandemic Labour markets bounce back from coronavirus (COVID-19) pandemic  30 May 2022  Wide variation in price changes of lowest-cost groceries    
+Latest headlines 9 June 2022  Lower transport use under lockdown led to record drop in emissions Platinum Jubilee week sees rises in spending and dining out  6 June 2022  Household saving rose sharply during the coronavirus (COVID-19) pandemic Labour markets bounce back from coronavirus (COVID-19) pandemic  30 May 2022  Wide variation in price changes of lowest-cost groceries  
+This page was last updated at 09:30 on 9 June 2022.
+Greenhouse gas (GHG) emissions from transport use among UK residents fell by just under 37% from 2019 to 2020 – the biggest fall recorded of any sector. 
+This contributed to an overall fall in GHG emissions of 13%, which is the biggest single year fall since these statistics began in 1990. It coincided with the nationwide lockdowns to prevent the spread of coronavirus (COVID-19). 
+  Transport and storage saw a record 37% fall in emissions in 2020  Total greenhouse gas emissions by industry section and group, UK, 1990 to 2020         Source: Ricardo Energy and Environment, Office for National Statistics   Notes: Units: Mass of air emissions per year in thousand tonnes of carbon dioxide equivalent   Download this chart Transport and storage saw a record 37% fall in emissions in 2020  Image  .csv   .xls   
+Units: Mass of air emissions per year in thousand tonnes of carbon dioxide equivalent 
+Total GHG emissions on a residency basis for the UK in 2020 were over 478 million tonnes of carbon dioxide equivalent. 
+Households, which are the largest contributor to UK emissions, saw a smaller fall than other sectors. 
+However, emissions related to consumer spending (including heating homes and travelling) fell 11% in 2020, which is one of the largest annual falls in this sector since 1990. 
+🠕 Back to the top
+The week including the Queen’s Platinum Jubilee and spring bank holidays saw rises in some consumer spending and dining out. 
+The seven-day average estimate of UK seated diners rose by 23 percentage points in the week ending Sunday 5 June 2022. 
+  In the week including the Jubilee Bank Holiday, the seven-day average estimate of UK seated diners increased by 23 percentage points  Seated diners, seven-day average, percentage compared with the equivalent week of 2019, week ending 1 March 2020 to week ending 5 June 2022, UK, London and Manchester         Source: Open Table   Download this chart In the week including the Jubilee Bank Holiday, the seven-day average estimate of UK seated diners increased by 23 percentage points  Image  .csv   .xls   
+In the same period, Google Mobility data showed visits to “retail and recreation” rose by 8% from the previous week. 
+In the week to Wednesday 1 June 2022, the UK credit and debit card purchases indicator rose by 6 percentage points from the previous week, with rises across all spending categories. 
+Not all stores saw a rise in spending over the latest week. Transactions in Pret a Manger stores fell in the week to 2 June 2022, with the largest week-on-week falls in Manchester and London city stores (31 and 24 percentage points respectively). 
+🠕 Back to the top
+Household saving as a proportion of household resources increased significantly during the coronavirus (COVID-19) pandemic, peaking at a record 23.9% in Quarter 2 (Apr to June) 2020. 
+The sharp rise coincided with government-imposed restrictions on social contact and economic activities resulting in significantly reduced household spending. 
+It is estimated that approximately three-quarters of the increase in household savings during the coronavirus pandemic was the result of forced saving. This amounts to over £140 billion, or around 10% of annual household disposable income. 
+In Quarter 4 (Oct to Dec) 2021, the household saving ratio fell to 6.8%, close to the pre-coronavirus pandemic level of 6.0% in Quarter 4 2019. 
+  There has been a surge in household saving over the coronavirus pandemic in comparison with historical ratios The household saving ratio (%), UK, Quarter 1 (Jan to Mar) 2017 to Quarter 4 (Oct to Dec) 2021        Source: Office for National Statistics – Quarterly sector accounts, UK   Download this chart There has been a surge in household saving over the coronavirus pandemic in comparison with historical ratios Image  .csv   .xls   
+🠕 Back to the top
+Employment levels have recovered well since the coronavirus (COVID-19) pandemic in all G7 countries. 
+However, employment remains marginally below pre-coronavirus pandemic levels in all of these countries except for Canada and France where employment levels are now higher than Quarter 4 2019. 
+In North America, employment fell sharply in the early stages of the coronavirus pandemic reflecting short-term layoffs. In Europe, the falls in employment were far more contained demonstrating the relative success of enhanced job retention schemes. 
+Real household disposable incomes fell during 2020 in Europe but increased in North America and Japan, reflecting the impact of direct cash handouts to households. 
+🠕 Back to the top
+The lowest-priced supermarket everyday items have increased in price by around as much as average food and non-alcoholic drink prices in the 12 months to April 2022.
+Highly experimental research examined 30 everyday food and non-alcoholic grocery items, scraped from the websites of the seven major supermarkets, and found a wide variation in their prices, with some rising by 15% or more.
+For 13 of the 30 sampled items, the average lowest price increased at a faster rate than the latest consumer price inflation for food and non-alcoholic drinks (6.7%) in the year to April 2022. For six of the 30, the lowest prices fell on average in the same period.
+   Embed code  Embed this interactive   Copy      
+Data for item-level price changes, lowest price of selected 30 everyday groceries (XLSX, 1KB)
+The items where the lowest prices rose at the fastest rate were pasta (up 50% between April 2021 and April 2022), crisps (17%), bread (16%), minced beef (16%) and rice (15%).
+For 6 of the 30 items, the lowest prices fell on average over the 12 months to April 2022. Price decreases were measured for potatoes (a 14% fall in price), cheese (7%), pizza (4%), chips (3%), sausages (3%) and apples (1%).
+The research also found a considerable difference between the lowest-cost version of an item and the next lowest-cost version, with most items at least 20% more expensive.
+🠕 Back to the top 
+ Statistical bulletin | Released on 12 May 2022 
+Gross domestic product (GDP) measures the value of goods and services produced in the UK. It estimates the size of and growth in the economy.
+ Statistical bulletin | Released on 6 May 2021 
+This page has been superseded by the Economic activity and social change in the UK, real-time indicators page (see link in Notices) . This will be the new title and location of the bulletin presenting the real-time indicators of economic activity and social change, for 13 May 2021 and future releases.
+ Statistical bulletin | Released on 1 June 2022 
+The impact of challenges facing the economy and other events on UK businesses. Based on responses from the voluntary fortnightly business survey (BICS) to deliver real-time information to help assess issues affecting UK businesses and economy, including financial performance, workforce, trade, and business resilience.
+ Statistical bulletin | Released on 17 May 2022 
+Estimates of employment, unemployment, economic inactivity and other employment-related statistics for the UK.
+ Statistical bulletin | Released on 18 May 2022 
+Price indices, percentage changes, and weights for the different measures of consumer price inflation.
+ Statistical bulletin | Released on 20 May 2022 
+A first estimate of retail sales in volume and value terms, seasonally and non-seasonally adjusted.
+ Statistical bulletin | Released on 24 May 2022 
+How the relationship between UK public sector monthly income and expenditure leads to changes in deficit and debt. 
+ Statistical bulletin | Released on 12 May 2022 
+Total value of UK exports and imports of goods and services in current prices, chained volume measures and implied deflators. 
+ All content is available under the Open Government Licence v3.0, except where otherwise stated 
