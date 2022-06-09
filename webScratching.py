@@ -67,6 +67,7 @@ def readExcel(OS):
 def readGoogleSheet(OS):
     print("Read from Google Sheet...")
 
+
     if OS == "mac":
         sa = gspread.service_account("Database//Creds.json")
     if OS == "windows":
@@ -83,6 +84,7 @@ def readGoogleSheet(OS):
 
 
 # main function
+
 answer = input("Choose your operating system (1-windows/ 2-mac): ")
 if int(answer) == 1:
     OS = "windows"
