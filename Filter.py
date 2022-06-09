@@ -36,7 +36,7 @@ class Trie:
 
 # Read file
 def readFile(extracted,fileName):
-    with open(f'Data File\\{fileName}.txt', 'r') as file:
+    with open(f'Data File\\{fileName}.txt', 'r', encoding="utf-8") as file:
         # reading each line
         for line in file:
             # reading each word
