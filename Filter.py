@@ -1,6 +1,7 @@
 # String matching algorithm - Trie Algorithm
 from xmlrpc.server import list_public_methods
 
+
 class TrieNode:
 
     # in order to create an instance of trie node, insert the letter, eg: TrieNode("*"
@@ -35,8 +36,8 @@ class Trie:
 
 
 # Read file
-def readFile(extracted,fileName):
-    with open(f'Data File\\{fileName}.txt', 'r') as file:
+def readFile(extracted, fileName):
+    with open(f'Data File\\{fileName}.txt', 'r', encoding="utf-8") as file:
         # reading each line
         for line in file:
             # reading each word
@@ -80,6 +81,7 @@ def readNeutralWords(neutralWords):
                 # displaying the words
                 neutralWords.append(word)
 
+
 def readStopWords(stopWords):
     with open('Database\\stopWords.txt', 'r') as file:
 
@@ -90,23 +92,27 @@ def readStopWords(stopWords):
             for word in line.split(','):
                 # displaying the words
                 stopWords.append(word)
+
+
 def convert(lst):
     return (lst[0].split())
+
 
 def magic(lst):
     restructured = []
     for Line in lst:
         words = Line.split(" ")
         for i in range(len(words)):
-            restructured.append(words[i].replace("\n",""))
+            restructured.append(words[i].replace("\n", ""))
 
     return restructured
+
 
 # Driver code
 # Call function to read from text file
 
 for y in range(25):
-    fileName = "DATA" + str(y+1)
+    fileName = "DATA" + str(y + 1)
     extracted = []
     positiveWords = []
     negativeWords = []
@@ -114,7 +120,7 @@ for y in range(25):
     stopWords = []
     newAyat = []
 
-    readFile(extracted,fileName)
+    readFile(extracted, fileName)
     readPositiveWords(positiveWords)
     readNegativeWords(negativeWords)
     readNeutralWords(neutralWords)
@@ -206,7 +212,4 @@ for y in range(25):
 
     f.close()
 
-
-#Amirah start code here.....
-
-
+# Amirah start code here.....

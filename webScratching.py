@@ -88,8 +88,8 @@ def readGoogleSheet(OS):
 answer = input("Choose your operating system (1-windows/ 2-mac): ")
 if int(answer) == 1:
     OS = "windows"
-    # readExcel(OS)
-    readGoogleSheet(OS)
+    readExcel(OS)
+    # readGoogleSheet(OS)
 elif int(answer) == 2:
     OS = "mac"
     readExcel(OS)
