@@ -276,15 +276,8 @@ for y in range(25):
     f.close()
 
 Countries = ["USA", "JAPAN", "UAE", "CHINA", "ENGLAND"]
-
-# Count Word
-# print("Positive Word: ", len(positiveFound))
-# print("Negative Word: ", len(negativeFound))
-# print("Neutral Word: ", len(neutralFound))
-
 alltype = [totalPosWord,totalNegWord,totalNeuWord]
 type_word = ["Positive", "Negative", "Neutral"]
-
 
 
 import plotly.express as px
@@ -299,3 +292,18 @@ fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
                    )
 
 fig.show()
+
+import plotly.graph_objects as go
+
+labels = ['USA','JAPAN','UAE','CHINA', 'ENGLAND']
+values = [totalPosWord[0], totalPosWord[1], totalPosWord[2], totalPosWord[3], totalPosWord[4]]
+
+fig2 = go.Figure(data=[go.Pie(labels=labels, values=values)])
+fig2.show()
+
+
+labels = ['Positive Words','Negative Word','Neutral Word']
+values = [totalPosWord[0], totalNegWord[0], totalNeuWord[0]]
+
+fig3 = go.Figure(data=[go.Pie(labels=labels, values=values)])
+fig3.show()
