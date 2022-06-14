@@ -111,6 +111,7 @@ def magic(lst):
 # Driver code
 # Call function to read from text file
 
+
 for y in range(25):
     fileName = "DATA" + str(y + 1)
     extracted = []
@@ -217,15 +218,15 @@ print("Positive Word: ", len(positiveFound))
 print("Negative Word: ", len(negativeFound))
 print("Neutral Word: ", len(neutralFound))
 
-a = [len(positiveFound)]
-b = [len(negativeFound)]
-c = [len(neutralFound)]
-number_count = [a,b,c]
-type_word = ["Positive", "Negative", "Neutral"]
-country_name = ["USA"]
+# a = [len(positiveFound)]
+# b = [len(negativeFound)]
+# c = [len(neutralFound)]
+# number_count = [len(positiveFound),len(negativeFound),len(neutralFound)]
+# type_word = ["Positive", "Negative", "Neutral"]
+# country_name = ["USA", "Japan", "UAE", "China", "England"]
 
-import plotly.express as px
-
+# import plotly.express as px
+#
 fig = px.histogram(data_frame=None, x=country_name, y=number_count, title="Histogram of Countries over Word Count")
 newnames = {'wide_variable_0':'Positive words', 'wide_variable_1': 'Negative words', 'wide_variable_2': 'Neutral words', 'wide_variable_3': 'Stop words'}
 fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
@@ -233,6 +234,6 @@ fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
                                       hovertemplate = t.hovertemplate.replace(t.name, newnames[t.name])
                                       )
                    )
-
-#fig=px.histogram(data_frame=None, x=country_name, y=number_count, text_auto=True, title="Countries")
-fig.show()
+#
+# #fig=px.histogram(data_frame=None, x=country_name, y=number_count, text_auto=True, title="Countries")
+# fig.show()
