@@ -36,9 +36,8 @@ class Trie:
 
 
 # Read file
-def readFile(extracted):
-    with open('Data File\\USA1.txt', 'r') as file:
-
+def readFile(extracted, fileName):
+    with open(f'Data File\\{fileName}.txt', 'r', encoding="utf-8") as file:
         # reading each line
         for line in file:
             # reading each word
@@ -82,6 +81,7 @@ def readNeutralWords(neutralWords):
                 # displaying the words
                 neutralWords.append(word)
 
+
 def readStopWords(stopWords):
     with open('Database\\stopWords.txt', 'r') as file:
 
@@ -92,103 +92,125 @@ def readStopWords(stopWords):
             for word in line.split(','):
                 # displaying the words
                 stopWords.append(word)
+
+
 def convert(lst):
     return (lst[0].split())
+
 
 def magic(lst):
     restructured = []
     for Line in lst:
         words = Line.split(" ")
         for i in range(len(words)):
-            restructured.append(words[i].replace("\n",""))
+            restructured.append(words[i].replace("\n", ""))
 
     return restructured
 
+
 # Driver code
 # Call function to read from text file
-extracted = []
-positiveWords = []
-negativeWords = []
-neutralWords = []
-stopWords = []
-newAyat = []
 
-readFile(extracted)
-readPositiveWords(positiveWords)
-readNegativeWords(negativeWords)
-readNeutralWords(neutralWords)
-readStopWords(stopWords)
-for i in range(len(positiveWords)):
-    positiveWords[i] = (positiveWords[i].replace(" ", ""))
+for y in range(25):
+    fileName = "DATA" + str(y + 1)
+    extracted = []
+    positiveWords = []
+    negativeWords = []
+    neutralWords = []
+    stopWords = []
+    newAyat = []
 
-trieStop = Trie()
-wordsOnly = magic(extracted)
-print(wordsOnly)
+    readFile(extracted, fileName)
+    readPositiveWords(positiveWords)
+    readNegativeWords(negativeWords)
+    readNeutralWords(neutralWords)
+    readStopWords(stopWords)
 
-positiveFound = []
-negativeFound = []
-neutralFound = []
-stopFound = []
+    for i in range(len(positiveWords)):
+        positiveWords[i] = (positiveWords[i].replace(" ", ""))
 
-newSentence = []
+    trieStop = Trie()
+    wordsOnly = magic(extracted)
 
+    positiveFound = []
+    negativeFound = []
+    neutralFound = []
+    stopFound = []
 
-# Add stop words into the TRIE
-for i in range(len(stopWords)):
-    trieStop.add(stopWords[i].lower())
+    newSentence = []
 
-# Remove stop word
-for i in range(len(wordsOnly)):
-    if trieStop.search(wordsOnly[i].lower()):
-        stopFound.append(wordsOnly[i])
-    else:
-        newSentence.append(wordsOnly[i])
+    # Add stop words into the TRIE
+    for i in range(len(stopWords)):
+        trieStop.add(stopWords[i].lower())
 
-trie = Trie()
-trieNegative = Trie()
-trieNeutral = Trie()
+    # Remove stop word
+    for i in range(len(wordsOnly)):
+        if trieStop.search(wordsOnly[i].lower()):
+            stopFound.append(wordsOnly[i])
+        else:
+            newSentence.append(wordsOnly[i])
 
-# Add positive words into the TRIE
-for i in range(len(positiveWords)):
-    trie.add(positiveWords[i].lower())
+    trie = Trie()
+    trieNegative = Trie()
+    trieNeutral = Trie()
 
-# Add negative words into the TRIE
-for i in range(len(negativeWords)):
-    trieNegative.add(negativeWords[i].lower())
+    # Add positive words into the TRIE
+    for i in range(len(positiveWords)):
+        trie.add(positiveWords[i].lower())
 
-# Add neutral words into the TRIE
-for i in range(len(neutralWords)):
-    trieNeutral.add(neutralWords[i].lower())
+    # Add negative words into the TRIE
+    for i in range(len(negativeWords)):
+        trieNegative.add(negativeWords[i].lower())
 
-for i in range(len(wordsOnly)):
-    if trieNegative.search(wordsOnly[i].lower()):
-        negativeFound.append(wordsOnly[i])
+    # Add neutral words into the TRIE
+    for i in range(len(neutralWords)):
+        trieNeutral.add(neutralWords[i].lower())
 
-for i in range(len(wordsOnly)):
-    if trieNegative.search(wordsOnly[i].lower()):
-        negativeFound.append(wordsOnly[i])
+    for i in range(len(wordsOnly)):
+        if trieNegative.search(wordsOnly[i].lower()):
+            negativeFound.append(wordsOnly[i])
 
+    for i in range(len(wordsOnly)):
+        if trieNegative.search(wordsOnly[i].lower()):
+            negativeFound.append(wordsOnly[i])
 
-# Search the word from the list of positive, negative and neutral words
-for i in range(len(newSentence)):
-    if trie.search(newSentence[i].lower()):
-        positiveFound.append(newSentence[i])
+    # Search the word from the list of positive, negative and neutral words
+    for i in range(len(newSentence)):
+        if trie.search(newSentence[i].lower()):
+            positiveFound.append(newSentence[i])
 
-    elif trieNegative.search(newSentence[i].lower()):
-        negativeFound.append(newSentence[i])
+        elif trieNegative.search(newSentence[i].lower()):
+            negativeFound.append(newSentence[i])
 
-    elif trieNeutral.search(newSentence[i].lower()):
-        neutralFound.append(newSentence[i])
+        elif trieNeutral.search(newSentence[i].lower()):
+            neutralFound.append(newSentence[i])
 
-while("" in negativeFound) :
-    negativeFound.remove("")
+    while ("" in negativeFound):
+        negativeFound.remove("")
 
+    # Write the positive words found into a text file
+    f = open("List\\listPositive.txt", "a")
 
+    for i in range(len(positiveFound)):
+        f.write(positiveFound[i] + ",")
 
-print("Sentence: ", newSentence, "\n")
-print("Positive: ", positiveFound)
-print("Negative: ", negativeFound)
-print("Neutral: ", neutralFound)
+    f.close()
+
+    # Write the negative words found into a text file
+    f = open("List\\listNegative.txt", "a")
+
+    for i in range(len(negativeFound)):
+        f.write(negativeFound[i] + ",")
+
+    f.close()
+
+    # Write the neutral words found into a text file
+    f = open("List\\listNeutral.txt", "a")
+
+    for i in range(len(neutralFound)):
+        f.write(neutralFound[i] + ",")
+
+    f.close()
 
 # Count Word
 print("Positive Word: ", len(positiveFound))
