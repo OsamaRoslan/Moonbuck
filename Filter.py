@@ -1,6 +1,6 @@
 # String matching algorithm - Trie Algorithm
 from xmlrpc.server import list_public_methods
-
+import array as arr
 
 class TrieNode:
 
@@ -107,6 +107,12 @@ def magic(lst):
 
     return restructured
 
+totalPosWord = arr.array("i", [])
+totalNegWord = arr.array("i", [])
+totalNeuWord = arr.array("i", [])
+PosWord = 0
+NegWord = 0
+NeuWord = 0
 
 # Driver code
 # Call function to read from text file
@@ -210,19 +216,72 @@ for y in range(25):
     for i in range(len(neutralFound)):
         f.write(neutralFound[i] + ",")
 
+    if y < 5:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 4:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+    elif y < 10:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 9:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+    elif y < 15:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 14:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+    elif y < 20:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 19:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+    else:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 24:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+
     f.close()
 
-# Count Word
-print("Positive Word: ", len(positiveFound))
-print("Negative Word: ", len(negativeFound))
-print("Neutral Word: ", len(neutralFound))
+Countries = ["USA", "JAPAN", "UAE", "CHINA", "ENGLAND"]
 
-a = [len(positiveFound)]
-b = [len(negativeFound)]
-c = [len(neutralFound)]
-number_count = [a,b,c]
+# Count Word
+# print("Positive Word: ", len(positiveFound))
+# print("Negative Word: ", len(negativeFound))
+# print("Neutral Word: ", len(neutralFound))
+
 type_word = ["Positive", "Negative", "Neutral"]
-country_name = ["USA"]
 
 import plotly.express as px
 
