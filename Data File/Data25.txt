@@ -6,56 +6,50 @@ A roundup of the latest data and analysis on the UK economy, business and jobs f
 This page provides commentary and charts on the latest changes in the UK economy, using novel and rapid data sources as well as official statistics. 
 We explain the reasons behind each change as much as possible, although it can be difficult to separate the impacts of different things such as Brexit and COVID-19. 
 For an overview of our main economic indicators, visit our dashboard.
- Latest headlines 14 June 2022  Job vacancies reach record 1.3 million  13 June 2022  UK GDP is estimated to have fallen by 0.3% in April 2022 EU exports increased for the third consecutive month in April 2022  10 June 2022  Around 3 in 4 adults report feeling worried about costs of living  9 June 2022  Lower transport use under lockdown led to record drop in emissions Platinum Jubilee week sees rises in spending and dining out    
-Latest headlines 14 June 2022  Job vacancies reach record 1.3 million  13 June 2022  UK GDP is estimated to have fallen by 0.3% in April 2022 EU exports increased for the third consecutive month in April 2022  10 June 2022  Around 3 in 4 adults report feeling worried about costs of living  9 June 2022  Lower transport use under lockdown led to record drop in emissions Platinum Jubilee week sees rises in spending and dining out  
-This page was last updated at 07:00 on 14 June 2022.
-The number of job vacancies in the UK reached new record levels of 1.3 million in the three months to May 2022.
-However, the rate of growth in the number of job vacancies has continued to slow in the latest period.
-In February to April 2022, the employment rate rose by 0.2 percentage points to 75.6%. This remains below the levels seen before the coronavirus (COVID-19) pandemic. The number of full-time employees rose to a record high, but was offset by a fall in the number of part-time employees.
-The unemployment rate fell by 0.2 percentage points to 3.8% in the same period, and the economic inactivity rate fell by 0.1 percentage points to 21.3%.
-Adjusted for inflation, in February to April 2022, regular pay (excluding bonuses) fell by 2.2% on the year. Strong bonus payments kept real terms total pay growth positive at 0.4%.
-Gross domestic product (GDP) fell by 0.3% in April 2022, after a decline of 0.1% in March 2022. 
-Services fell by 0.3% in April 2022 and was the largest contributor to that month’s fall in GDP. Human health and social work activities fell by 5.6% in April and was the main negative contributor to that month’s fall in services. The driver of this fall was human health activities, which fell by 7.6%. This largely reflects the significant reduction in NHS Test and Trace activity following the changes to testing policy in England from April. 
-Production output fell for the third consecutive month in April 2022, with a contraction of 0.6%, primarily driven by manufacturing. Manufacturing decreased by 1.0% in April with falls in 8 out of 13 of the sub-sectors. Anecdotal evidence suggests that the manufacturing sub-sector was affected by increasing prices, in particular petrol and energy prices. 
-Construction output decreased by 0.4% in April 2022. This is the first monthly decrease since October 2021 (fall of 0.9%) following five consecutive months of growth. Despite the monthly fall, construction output was still 3.3% above its pre-coronavirus (COVID-19) pandemic level (February 2020) in April 2022. 
-  All main sectors contributed negatively to growth in April 2022  Contributions to monthly GDP growth, percentage points, April 2021 to April 2022, UK         Source: Office for National Statistics   Download this chart All main sectors contributed negatively to growth in April 2022  Image  .csv   .xls   
-Total exports of goods, excluding precious metals, increased by £2.2 billion (7.4%) in April 2022 compared with March 2022. This was driven by a £1.2 billion (8.1%) increase in exports to EU countries, while exports to non-EU countries increased by £0.9 billion (6.5%). EU exports have increased for the third consecutive month and reached £16.4 billion in April 2022, their highest level in current prices since the series began in 1997. 
-The Russian invasion of Ukraine began on 24 February and in response, the UK government has imposed a range of economic sanctions on Russia from late February and early March. Exports to Russia in April 2022 fell to the lowest monthly value since January 1999. Imports from Russia fell to the lowest monthly value since March 2004, with imports of fuels reducing by £0.3 billion in April. 
-Total imports of goods, excluding precious metals, increased by £0.4 billion (0.7%) in April 2022 compared with March 2022. Imports from EU countries increased by £1.1 billion (4.2%), while imports from non-EU countries fell by £0.7 billion (2.6%). 
-Imports from EU countries were £0.6 billion higher than from non-EU countries in April 2022. Non-EU imports were higher than EU imports for most of 2021, linked to the large increases in the imports of fuels in the last months of the year. Imports of fuels from non-EU countries increased by £0.6 billion in April 2022. 
-In January 2022, HM Revenue and Customs (HMRC) implemented a data collection change affecting data on imports from the EU to Great Britain. As a result, our EU to Great Britain import statistics from January 2022 are not directly comparable with previous months. HMRC is continuing to assess any impacts of this change and drivers to the current import trends. 
-   Embed code  Embed this interactive   Copy      
-Download the data on imports and exports of goods (XLSX, 21KB)
-Around three quarters (74%) of adults reported feeling very or somewhat worried about the rising costs of living, according to the latest data from the Opinions and Lifestyle Survey collected between 25 May and 5 June 2022.
-Using a larger pool of data covering the period 7 April to 22 May 2022, we have now examined the characteristics of those worried about the rising costs of living in more detail.
-Those most likely to feel very or somewhat worried include adults living with a dependent child aged 0 to 4 years (90%), those aged 30 to 49 years (82%), disabled people (82%) and women (81%).
-   Embed code  Embed this interactive   Copy      
-Download data on worry about cost of living by age group (11 KB, XLSX)
-While overall levels of worry tended to be similar among adults with different levels of income, those with a gross personal income of less than £10,000 per year had the highest percentage feeling very worried (31%), whereas those with a gross personal income of £50,000 or more had the lowest percentage feeling very worried (12%).
-Around 7 in 10 adults (68%) who said their costs of living had increased and that they were very worried about the rising costs of living reported spending less on non-essentials.
-Read the bulletin on people's worries about the costs of living
-Explore the latest insights on coronavirus and lifestyle
+ Latest headlines 17 June 2022  End of “forced savings” sees spending return to pre-COVID levels Households and businesses are borrowing more since the coronavirus (Covid-19) pandemic  16 June 2022  One in five businesses with 10 or more employees using or intending to use a home working business model permanently One in four businesses report inflation is main concern Labour productivity was heavily skewed towards London in 2020  15 June 2022  Coronavirus effect sees visits to the UK almost halved    
+Latest headlines 17 June 2022  End of “forced savings” sees spending return to pre-COVID levels Households and businesses are borrowing more since the coronavirus (Covid-19) pandemic  16 June 2022  One in five businesses with 10 or more employees using or intending to use a home working business model permanently One in four businesses report inflation is main concern Labour productivity was heavily skewed towards London in 2020  15 June 2022  Coronavirus effect sees visits to the UK almost halved  
+This page was last updated at 09:30 on 17 June 2022.
+The coronavirus (COVID-19) lockdown restrictions in 2020 saw a record £126.9 billion increase in bank deposits from households. 
+These “forced savings” led to a rise in household savings of a record 23.9% in Quarter 2 (Apr to June) 2020. 
+Since restrictions were lifted, household spending has returned to levels seen before the COVID-19 pandemic. 
+After the largest quarterly fall on record of 20.5% between April and June 2020, household spending was 3.6% above pre-coronavirus levels between October and December 2021. 
+Over the course of 2021, household bank deposits fell by £65.6 billion, likely because of increased spending opportunities and consumer confidence. 
+Since the coronavirus (COVID-19) pandemic began, there has been a rise in the availability of loans to households and businesses, which contrasts with the experience of the 2008 - 2009 global financial crisis. 
+Following the pandemic, all types of consumer credit lending saw a sharp fall, in particular, lending on credit cards. One factor might be the build-up in household savings, which may have reduced the need for consumer credit. 
+In recent months, there has been a sharp rise in cost and price inflationary pressures. Adults have reported using credit more than usual, possibly in response to the rising cost of living. Credit card lending has increased by 10.6% on the year in March 2022, in contrast with a falling trend in consumer credit in 2020 and 2021. The ONS Opinions and Lifestyle Survey found that 14% of adults reported using credit more than usual in response to a higher cost of living in May 2022, a rise from 11% from early April 2022. 
+Over the course of the pandemic, businesses increased their borrowing, particularly for small and medium-sized enterprise and short-term loans. These loans typically contribute a significant share towards total business loans, reflecting businesses’ reliance on bank lending to manage cash flow and operations. 
+In 2020, there was a large rise in deposits held by households, to the equivalent of 9% of GDP, which largely reflected the effects of ‘forced’ savings in response to coronavirus restrictions. Businesses also increased their deposits holdings to 7.2% of GDP, which may have been a precautionary response to more uncertain business conditions. 
+In early June 2022, businesses in the UK not permanently stopped trading were asked whether they were using, or intending to use, home working as a permanent business model.
+One in five (19%) of those businesses with 10 or more employees reported that they were.
+In early June 2022, the percentage of businesses with 10 or more employees who reported that they were using, or intending to use, increased home working as a permanent business model remained broadly stable compared with early April 2022.
+The main reason these businesses reported that they were using, or intending to use, increased homeworking was improved staff well-being, at 79%. However, this percentage has decreased from 83% reported in early April 2022.
+Further details including the full list of concerns broken down by industry and size band (including those businesses with less than 10 employees) are available in our accompanying dataset.
+More than one in four UK businesses (26%) reported price inflation was their main concern looking ahead to July 2022. 
+In June 2022, the proportion of businesses with no concerns for the following month rose to 24%, from 21% in May 2022. 
+There have also been falls in the number of online job adverts across every English region and UK country in the latest period. 
+The total number of online job averts on 10 June 2022 was 129% of its February 2020 pre-coronavirus (COVID-19) average level. 
+Of the 28 categories measured, 25 saw a decrease in the number of online job adverts compared with three weeks ago. 
+The largest decrease was in “manufacturing” (22%), followed by “facilities and maintenance” (17%). The largest increase compared with three weeks ago was in “wholesale and retail” at 6%. 
 🠕 Back to the top
-Greenhouse gas (GHG) emissions from transport use among UK residents fell by just under 37% from 2019 to 2020 – the biggest fall recorded of any sector. 
-This contributed to an overall fall in GHG emissions of 13%, which is the biggest single year fall since these statistics began in 1990. It coincided with the nationwide lockdowns to prevent the spread of coronavirus (COVID-19). 
-  Transport and storage saw a record 37% fall in emissions in 2020  Total greenhouse gas emissions by industry section and group, UK, 1990 to 2020         Source: Ricardo Energy and Environment, Office for National Statistics   Notes: Units: Mass of air emissions per year in thousand tonnes of carbon dioxide equivalent   Download this chart Transport and storage saw a record 37% fall in emissions in 2020  Image  .csv   .xls   
-Units: Mass of air emissions per year in thousand tonnes of carbon dioxide equivalent 
-Total GHG emissions on a residency basis for the UK in 2020 were over 478 million tonnes of carbon dioxide equivalent. 
-Households, which are the largest contributor to UK emissions, saw a smaller fall than other sectors. 
-However, emissions related to consumer spending (including heating homes and travelling) fell 11% in 2020, which is one of the largest annual falls in this sector since 1990. 
+UK labour productivity was highest in London and the South East in 2020, continuing a long-term trend. 
+Productivity levels as measured by output per hour worked were highest in London with productivity more than 50% higher than the UK median level. Productivity measured by output per job was also highest in London. However, this measure is likely to have been affected by the furlough scheme that was in place in 2020, when many jobs were not being carried out for periods of the year. 
+   Embed code  Embed this interactive   Copy      
+Download data on output per hour worked (XLSX, 16 KB)
 🠕 Back to the top
-The week including the Queen’s Platinum Jubilee and spring bank holidays saw rises in some consumer spending and dining out. 
-The seven-day average estimate of UK seated diners rose by 23 percentage points in the week ending Sunday 5 June 2022. 
-  In the week including the Jubilee Bank Holiday, the seven-day average estimate of UK seated diners increased by 23 percentage points  Seated diners, seven-day average, percentage compared with the equivalent week of 2019, week ending 1 March 2020 to week ending 5 June 2022, UK, London and Manchester         Source: Open Table   Download this chart In the week including the Jubilee Bank Holiday, the seven-day average estimate of UK seated diners increased by 23 percentage points  Image  .csv   .xls   
-In the same period, Google Mobility data showed visits to “retail and recreation” rose by 8% from the previous week. 
-In the week to Wednesday 1 June 2022, the UK credit and debit card purchases indicator rose by 6 percentage points from the previous week, with rises across all spending categories. 
-Not all stores saw a rise in spending over the latest week. Transactions in Pret a Manger stores fell in the week to 2 June 2022, with the largest week-on-week falls in Manchester and London city stores (31 and 24 percentage points respectively). 
+  Overseas residents made 44% fewer trips to the UK in 2021 than the previous year, because of the coronavirus (COVID-19) pandemic Visits to and from the UK 2001 to 2021          Download this chart Overseas residents made 44% fewer trips to the UK in 2021 than the previous year, because of the coronavirus (COVID-19) pandemic Image  .csv   .xls   
+Of those people who did visit the UK, they spent 7% less than in 2020; from £6.2 billion to £5.8 billion.
+The restrictions of the pandemic also had an effect on the volume of visitors from the UK to visit overseas, 20% fewer than the previous year and equating to 19.1 million visits.
+Those UK residents who did go abroad, spent £15.5 billion in 2021; this was an 12% increase on 2020. UK residents spent £15.5 billion on visits abroad in 2021, an increase of 12% compared with modelled data for 2020. The average spend per visit was £809 in 2021. Values for 2020 are not known, but this was an increase from £670 in 2019. 
+Some of this increase is because of the longer time spent abroad, likely to be because of the restrictions on travel during the coronavirus (COVID-19) pandemic. 
+For example, overseas residents stayed an increased number of nights compared with an average of 18 days in previous years. The average spend per day fell from £69 in 2019 to £46 in 2021 as more visits were to visit friends and family rather than the usual holidays. 
+The data also showed that visitors to the UK in 2021 were predominantly there to visit friends or family, with 3.3 million visits. It was the first time this type of visit outnumbered holidays to the UK.
+Estimates for the period April to December 2020 in this release are based on administrative sources and modelling. The methods used are described in our Data sources and quality.
 🠕 Back to the top
  Statistical bulletin | Released on 13 June 2022 
 Gross domestic product (GDP) measures the value of goods and services produced in the UK. It estimates the size of and growth in the economy.
  Statistical bulletin | Released on 6 May 2021 
 This page has been superseded by the Economic activity and social change in the UK, real-time indicators page (see link in Notices) . This will be the new title and location of the bulletin presenting the real-time indicators of economic activity and social change, for 13 May 2021 and future releases.
- Statistical bulletin | Released on 1 June 2022 
+ Statistical bulletin | Released on 16 June 2022 
 The impact of challenges facing the economy and other events on UK businesses. Based on responses from the voluntary fortnightly business survey (BICS) to deliver real-time information to help assess issues affecting UK businesses and economy, including financial performance, workforce, trade, and business resilience.
  Statistical bulletin | Released on 14 June 2022 
 Estimates of employment, unemployment, economic inactivity and other employment-related statistics for the UK.
@@ -65,6 +59,6 @@ Price indices, percentage changes, and weights for the different measures of con
 A first estimate of retail sales in volume and value terms, seasonally and non-seasonally adjusted.
  Statistical bulletin | Released on 24 May 2022 
 How the relationship between UK public sector monthly income and expenditure leads to changes in deficit and debt. 
- Statistical bulletin | Released on 13 June 2022 
+ Statistical bulletin | Released on 13 June 2022  
 Total value of UK exports and imports of goods and services in current prices, chained volume measures and implied deflators. 
  All content is available under the Open Government Licence v3.0, except where otherwise stated 
