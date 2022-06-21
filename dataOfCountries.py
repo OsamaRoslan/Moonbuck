@@ -35,16 +35,16 @@ class Countries:
         return self.shops[index]
 
     def getGraph(self):
-        print("!\n! Graph for ", self.name, " :")
+        print("! Graph for ", self.name, " :")
         for x in range(len(self.graph)):
-            print("! ", x, " - ", self.graph[x])
+            print("!", x, "- ", self.graph[x])
+        print("!")
         return self.graph
 
 
 def randomList(listcountry):
     # Generate 5 random numbers between 0 and length of country
-    # randomlist = random.sample(range(0, len(listcountry)), random.randint(6, 10))
-    randomlist = [1, 2, 3, 4, 5, 6]
+    randomlist = random.sample(range(0, len(listcountry)), random.randint(6, 10))
     return randomlist
 
 
@@ -61,6 +61,7 @@ def updateList(listCountry):
 # return a list of shops with address, longitude and latitude
 def setLocation(lists, country):
     # Shop = [`address`, `longitude`, `latitude`]
+    # shops = [[`address`, `longitude`, `latitude`], [`address`, `longitude`, `latitude`], [`address`, `longitude`, `latitude`]]
     Shops = []
 
     for list in lists:
@@ -132,4 +133,3 @@ jpG = JPN.getGraph()
 aeG = UAE.getGraph()
 cnG = CHN.getGraph()
 egG = ENG.getGraph()
-
