@@ -95,7 +95,7 @@ header = next(csvreader)
 
 AErows = []
 CNrows = []
-EGrows = []
+GBrows = []
 JProws = []
 USrows = []
 
@@ -105,8 +105,8 @@ for row in csvreader:
         AErows.append(row)
     elif row[7] == "CN":
         CNrows.append(row)
-    elif row[7] == "EG":
-        EGrows.append(row)
+    elif row[7] == "GB":
+        GBrows.append(row)
     elif row[7] == "JP":
         JProws.append(row)
     elif row[7] == "US":
@@ -123,11 +123,11 @@ USA = Countries("USA", USrows)
 JPN = Countries("JAPAN", JProws)
 UAE = Countries("UAE", AErows)
 CHN = Countries("CHINA", CNrows)
-ENG = Countries("ENGLAND", EGrows)
+ENG = Countries("ENGLAND", GBrows)
 
 # Show all graph in each country
 usG = USA.getGraph()
 jpG = JPN.getGraph()
 aeG = UAE.getGraph()
 cnG = CHN.getGraph()
-egG = ENG.getGraph()
+gbG = ENG.getGraph()
