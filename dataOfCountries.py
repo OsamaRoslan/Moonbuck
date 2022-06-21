@@ -16,8 +16,9 @@ class Shop:
         self.longitude = longitude
 
     def getGraph(self):
-        print(self.country)
-        print(self.graph)
+        print("! ", self.country)
+        print("! ", self.graph, "\n")
+        return self.graph
 
 
 # This class contains the name of the country and some shops in different location
@@ -117,9 +118,9 @@ CHN = setLocation(updateList(CNrows), "CHINA")
 ENG = setLocation(updateList(EGrows), "ENGLAND")
 
 # Show all graph in each country
-print(USA.pop().getGraph())
-print(JPN.pop().getGraph())
-print(UAE.pop().getGraph())
-print(CHN.pop().getGraph())
-print(ENG.pop().getGraph())
+usG = USA.pop().getGraph()
+jpG = JPN.pop().getGraph()
+aeG = UAE.pop().getGraph()
+cnG = CHN.pop().getGraph()
+egG = ENG.pop().getGraph()
 
