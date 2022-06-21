@@ -3,6 +3,8 @@ from xmlrpc.server import list_public_methods
 import array as arr
 import numpy as np
 
+from dataOfCountries import USA, JPN, UAE, CHN, ENG
+
 
 class TrieNode:
 
@@ -301,124 +303,55 @@ Countries = ["USA", "JAPAN", "UAE", "CHINA", "ENGLAND"]
 alltype = [totalPosWord,totalNegWord,totalNeuWord]
 type_word = ["Positive", "Negative", "Neutral", "Stop"]
 
-totalPosWordAll = sum(totalPosWord)
-totalWord = sum(totalPosWord) + sum(totalNeuWord) + sum(totalNegWord)
-
-prob_totalPosWord = totalPosWordAll/totalWord
-print("Probability of positive words in 25 articles =", prob_totalPosWord)
-
-totalPosWordAll_eachCountry = [totalPosWord[0], totalPosWord[1],totalPosWord[2],totalPosWord[3],totalPosWord[4]]
-totalWord_eachCountry = [(totalPosWord[0] + totalNeuWord[0] + totalNegWord[0]),
-                         (totalPosWord[1] + totalNeuWord[1] + totalNegWord[1]),
-                         (totalPosWord[2] + totalNeuWord[2] + totalNegWord[2]),
-                         (totalPosWord[3] + totalNeuWord[3] + totalNegWord[3]),
-                         (totalPosWord[4] + totalNeuWord[4] + totalNegWord[4])]
-
-avgPosWords = [0] * len(Countries)
-
-for i in range(len(Countries)):
-    avgPosWords[i] = totalPosWordAll_eachCountry[i] / totalWord_eachCountry[i]
-
-print("\nProbability Positive Words for Each Country")
-for i in range(len(Countries)):
-    print(Countries[i], "=", avgPosWords[i])
-
-#####Ni perlu ikut output variable part 2####
-#####    Sila ubah   #####
-shortestDist = [53, 862, 790, 24, 204]
-
-average_shortestDist = [0] * len(Countries)
-
-print("\nProbability Shortest Distance for Each Country")
-for i in range(len(Countries)):
-    average_shortestDist[i] = shortestDist[i] / sum(shortestDist)
-
-#To calculate the average of shortest distance of each country
-
-for i in range(len(Countries)):
-    print(Countries[i], "=", average_shortestDist[i])
-
-#To calculate the average of shortest distance of each country
-
-highestAvePosWords = max(avgPosWords)
-lowestAveShortestDist = min(average_shortestDist)
-
-#To calculate the average of the shortest distance of each country
-
-prob = [0] * len(Countries)
-
-for i in range(len(Countries)):
-    prob[i] = (avgPosWords[i] / sum(avgPosWords)) * (1 - average_shortestDist[i])
-
-#To calculate the average of shortest distance of each country
-
-for i in range(len(Countries)):
-    print(Countries[i], "=", prob[i])
-
-def bubbleSort(A):
-    for i in range(len(A)):
-        for j in range(1, len(A)):
-            if A[j - 1] < A[j]:
-                temp = A[j - 1]
-                A[j - 1] = A[j]
-                A[j] = temp
-            j=+1
-        i=-1
-
-bubbleSort(prob)
-
-print("\nTop 5 Countries")
-for i in range(len(Countries)):
-    print(prob[i])
 
 import plotly.express as px
 
 #bar chart for all variable
-# fig = px.histogram(data_frame=None, x=Countries, y=alltype, title="Histogram of Countries over Word Count")
-# newnames = {'wide_variable_0':'Positive words', 'wide_variable_1': 'Negative words', 'wide_variable_2': 'Neutral words', 'wide_variable_3': 'Stop words'}
-# fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
-#                                       legendgroup = newnames[t.name],
-#                                       hovertemplate = t.hovertemplate.replace(t.name, newnames[t.name])
-#                                       )
-#                    )
-#
-# fig.show()
+fig = px.histogram(data_frame=None, x=Countries, y=alltype, title="Histogram of Countries over Word Count")
+newnames = {'wide_variable_0':'Positive words', 'wide_variable_1': 'Negative words', 'wide_variable_2': 'Neutral words', 'wide_variable_3': 'Stop words'}
+fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
+                                      legendgroup = newnames[t.name],
+                                      hovertemplate = t.hovertemplate.replace(t.name, newnames[t.name])
+                                      )
+                   )
+
+fig.show()
 
 #pie chart
 import plotly.graph_objects as go
 
 #positive word percentage of all country
-# labels = ['USA','JAPAN','UAE','CHINA', 'ENGLAND']
-# values = [totalPosWord[0], totalPosWord[1], totalPosWord[2], totalPosWord[3], totalPosWord[4]]
-# fig2 = go.Figure(data=[go.Pie(labels=labels, values=values)])
-# fig2.show()
+labels = ['USA','JAPAN','UAE','CHINA', 'ENGLAND']
+values = [totalPosWord[0], totalPosWord[1], totalPosWord[2], totalPosWord[3], totalPosWord[4]]
+fig2 = go.Figure(data=[go.Pie(labels=labels, values=values)])
+fig2.show()
 
 
 #type of word for USA
-# labels = ['Positive Words','Negative Word','Neutral Word']
-# values = [totalPosWord[0], totalNegWord[0], totalNeuWord[0]]
-# fig3 = go.Figure(data=[go.Pie(labels=labels, values=values)])
-# fig3.show()
+labels = ['Positive Words','Negative Word','Neutral Word']
+values = [totalPosWord[0], totalNegWord[0], totalNeuWord[0]]
+fig3 = go.Figure(data=[go.Pie(labels=labels, values=values)])
+fig3.show()
 
 #bubble chart
-# fig5 = go.Figure(data=[go.Scatter(
-#     x=Countries, y=alltype,
-#     mode='markers',
-#     marker = dict(
-#         color=['rgb(93, 164, 214)', 'rgb(255, 144, 14)',
-#                'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
-#         opacity=[1, 0.8, 0.6, 0.4],
-#         size=[40, 60, 80, 100],
-#     )
-# )])
-#
-# fig5.show()
+fig5 = go.Figure(data=[go.Scatter(
+    x=Countries, y=alltype,
+    mode='markers',
+    marker = dict(
+        color=['rgb(93, 164, 214)', 'rgb(255, 144, 14)',
+               'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+        opacity=[1, 0.8, 0.6, 0.4],
+        size=[40, 60, 80, 100],
+    )
+)])
+
+fig5.show()
 
 #type of word for JAPAN
-# labels = ['Positive Words','Negative Word','Neutral Word']
-# values = [totalPosWord[1], totalNegWord[1], totalNeuWord[1]]
-# fig4 = go.Figure(data=[go.Pie(labels=labels, values=values)])
-# fig4.show()
+labels = ['Positive Words','Negative Word','Neutral Word']
+values = [totalPosWord[1], totalNegWord[1], totalNeuWord[1]]
+fig4 = go.Figure(data=[go.Pie(labels=labels, values=values)])
+fig4.show()
 
 
 
