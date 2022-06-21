@@ -2,6 +2,8 @@ import requests
 import gspread
 import pandas as pd
 from bs4 import BeautifulSoup
+import time
+
 OS = ""
 
 
@@ -10,13 +12,15 @@ def extractWebsite(indices, links, countries, sheet):
     if sheet:
         for index in indices:
             i = int(index[0]) % 5
-            Web = Website(links[0], countries[0] + str(i))
+            if i == 0:
+                i = 5
+            Web = Website(links[0], "Data" + index)
             Web.createText()
     else:
         for index in indices:
-            i = int(index) % 5
-            Web = Website(links[int(index) - 1], countries[int(index) - 1] + str(i))
+            Web = Website(links[int(index) - 1], "Data" + index)
             Web.createText()
+
 
 # Extract word from website
 class Website:
@@ -31,15 +35,17 @@ class Website:
         page = requests.get(self.url)
         doc = BeautifulSoup(page.text, 'html.parser')
         text = "Title: " + doc.title.text
-
         for x in range(len(doc.body.findAll("p"))):
             line = str(doc.body.findAll("p")[x].text).replace("\n", " ")
             if line != "":
                 text += line
                 text += "\n"
+            else:
+                pass
 
+        print("Creating Text...")
         self.country = "Data file\\" + self.country + ".txt"
-        with open(self.country, 'w') as f:
+        with open(self.country, 'w', encoding="utf-8") as f:
             f.write(text)
 
 
@@ -61,6 +67,7 @@ def readExcel(OS):
 def readGoogleSheet(OS):
     print("Read from Google Sheet...")
 
+
     if OS == "mac":
         sa = gspread.service_account("Database//Creds.json")
     if OS == "windows":
@@ -77,15 +84,15 @@ def readGoogleSheet(OS):
 
 
 # main function
+
 answer = input("Choose your operating system (1-windows/ 2-mac): ")
-if answer == 1:
+if int(answer) == 1:
     OS = "windows"
-    readExcel(OS)
+    # readExcel(OS)
     readGoogleSheet(OS)
-if answer == 2:
+elif int(answer) == 2:
     OS = "mac"
     readExcel(OS)
-    readGoogleSheet(OS)
+    # readGoogleSheet(OS)
 else:
     print("This Code Cannot Be Supported by Your Operating System")
-
