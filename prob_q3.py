@@ -1,4 +1,8 @@
-from dataOfCountries import USA, JPN, UAE, CHN, ENG
+
+
+
+#######################   Calculate the probability ##########################################
+
 from Filter import totalPosWord, totalNegWord, totalNeuWord, Countries
 
 
