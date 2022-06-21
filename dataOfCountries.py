@@ -48,8 +48,6 @@ def randomList(listcountry):
     return randomlist
 
 
-
-
 def updateList(listCountry):
     newlist = []
     turn = randomList(listCountry)
