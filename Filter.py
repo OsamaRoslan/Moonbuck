@@ -1,5 +1,6 @@
 # String matching algorithm - Trie Algorithm
 from xmlrpc.server import list_public_methods
+import array as arr
 
 class TrieNode:
 
@@ -35,8 +36,8 @@ class Trie:
 
 
 # Read file
-def readFile(extracted,fileName):
-    with open(f'Data File\\{fileName}.txt', 'r') as file:
+def readFile(extracted, fileName):
+    with open(f'Data File\\{fileName}.txt', 'r', encoding="utf-8") as file:
         # reading each line
         for line in file:
             # reading each word
@@ -80,6 +81,7 @@ def readNeutralWords(neutralWords):
                 # displaying the words
                 neutralWords.append(word)
 
+
 def readStopWords(stopWords):
     with open('Database\\stopWords.txt', 'r') as file:
 
@@ -90,23 +92,34 @@ def readStopWords(stopWords):
             for word in line.split(','):
                 # displaying the words
                 stopWords.append(word)
+
+
 def convert(lst):
     return (lst[0].split())
+
 
 def magic(lst):
     restructured = []
     for Line in lst:
         words = Line.split(" ")
         for i in range(len(words)):
-            restructured.append(words[i].replace("\n",""))
+            restructured.append(words[i].replace("\n", ""))
 
     return restructured
+
+totalPosWord = arr.array("i", [])
+totalNegWord = arr.array("i", [])
+totalNeuWord = arr.array("i", [])
+PosWord = 0
+NegWord = 0
+NeuWord = 0
 
 # Driver code
 # Call function to read from text file
 
+
 for y in range(25):
-    fileName = "DATA" + str(y+1)
+    fileName = "DATA" + str(y + 1)
     extracted = []
     positiveWords = []
     negativeWords = []
@@ -114,7 +127,7 @@ for y in range(25):
     stopWords = []
     newAyat = []
 
-    readFile(extracted,fileName)
+    readFile(extracted, fileName)
     readPositiveWords(positiveWords)
     readNegativeWords(negativeWords)
     readNeutralWords(neutralWords)
@@ -204,9 +217,93 @@ for y in range(25):
     for i in range(len(neutralFound)):
         f.write(neutralFound[i] + ",")
 
+    if y < 5:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 4:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+    elif y < 10:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 9:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+    elif y < 15:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 14:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+    elif y < 20:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 19:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+    else:
+        PosWord += len(positiveFound)
+        NegWord += len(negativeFound)
+        NeuWord += len(neutralFound)
+        if y == 24:
+            totalPosWord.append(PosWord)
+            totalNegWord.append(NegWord)
+            totalNeuWord.append(NeuWord)
+            PosWord = 0
+            NegWord = 0
+            NeuWord = 0
+
     f.close()
 
+Countries = ["USA", "JAPAN", "UAE", "CHINA", "ENGLAND"]
+alltype = [totalPosWord,totalNegWord,totalNeuWord]
+type_word = ["Positive", "Negative", "Neutral"]
 
-#Amirah start code here.....
+
+import plotly.express as px
 
 
+fig = px.histogram(data_frame=None, x=Countries, y=alltype, title="Histogram of Countries over Word Count")
+newnames = {'wide_variable_0':'Positive words', 'wide_variable_1': 'Negative words', 'wide_variable_2': 'Neutral words', 'wide_variable_3': 'Stop words'}
+fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
+                                      legendgroup = newnames[t.name],
+                                      hovertemplate = t.hovertemplate.replace(t.name, newnames[t.name])
+                                      )
+                   )
+
+fig.show()
+
+import plotly.graph_objects as go
+
+labels = ['USA','JAPAN','UAE','CHINA', 'ENGLAND']
+values = [totalPosWord[0], totalPosWord[1], totalPosWord[2], totalPosWord[3], totalPosWord[4]]
+
+fig2 = go.Figure(data=[go.Pie(labels=labels, values=values)])
+fig2.show()
+
+
+labels = ['Positive Words','Negative Word','Neutral Word']
+values = [totalPosWord[0], totalNegWord[0], totalNeuWord[0]]
+
+fig3 = go.Figure(data=[go.Pie(labels=labels, values=values)])
+fig3.show()

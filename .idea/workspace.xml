@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a381570-0ba6-45be-9dd8-98f9f33438c0" name="Changes" comment="" />
+    <list default="true" id="2a381570-0ba6-45be-9dd8-98f9f33438c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data File/Data4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data File/Data5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data File/Data9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScratching.py" beforeDir="false" afterPath="$PROJECT_DIR$/webScratching.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,25 +49,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Coding/Python/AlgoAssign",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.editor"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.Filter">
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Creds.json" />
   </component>
-  <component name="RunManager" selected="Python.Filter">
+  <component name="RunManager" selected="Python.webScratching">
     <configuration name="Filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\fahmi\AppData\Local\Microsoft\WindowsApps\python3.10.exe" />
+      <option name="SDK_HOME" value="D:\Coding\Python\AlgoProject\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Filter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -65,6 +102,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -80,7 +118,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\OsamaRoslan\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\OsamaRoslan\AppData\Local\Programs\Python\Python310\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -96,11 +134,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.Filter" />
+      <item itemvalue="Python.webScratching" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.webScratching" />
         <item itemvalue="Python.Filter" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.webScratching" />
       </list>
     </recent_temporary>
   </component>
@@ -114,6 +157,7 @@
       <updated>1654478613378</updated>
       <workItem from="1654478617560" duration="2399000" />
       <workItem from="1654486960077" duration="137000" />
+      <workItem from="1655129519725" duration="612000" />
     </task>
     <servers />
   </component>
@@ -133,6 +177,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -145,7 +196,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Moonbuck$printExcel.coverage" NAME="printExcel Coverage Results" MODIFIED="1654436645359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Moonbuck$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1654438687736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Moonbuck$webScratching.coverage" NAME="webScratching Coverage Results" MODIFIED="1654487088212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Moonbuck$webScratching.coverage" NAME="webScratching Coverage Results" MODIFIED="1655130070826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Moonbuck$wordCount.coverage" NAME="wordCount Coverage Results" MODIFIED="1654399283095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Moonbuck$extractText.coverage" NAME="extractText Coverage Results" MODIFIED="1654409706934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Moonbuck$readGSheet.coverage" NAME="readGSheet Coverage Results" MODIFIED="1654446212876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

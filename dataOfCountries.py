@@ -3,11 +3,10 @@ import random
 import sys
 from itertools import permutations
 from sys import maxsize
-
 import folium
 from folium import plugins
-
 from geopy import Nominatim, distance
+
 
 geolocator = Nominatim(user_agent="google maps")
 
@@ -41,19 +40,17 @@ class Countries:
         return self.shops[index]
 
     def getGraph(self):
-        print("!\n! Graph for ", self.name, " :")
+        print("! Graph for ", self.name, " :")
         for x in range(len(self.graph)):
-            print("! ", x, " - ", self.graph[x])
+            print("!", x, "- ", self.graph[x])
+        print("!")
         return self.graph
 
 
 def randomList(listcountry):
     # Generate 5 random numbers between 0 and length of country
     randomlist = random.sample(range(0, len(listcountry)), random.randint(6, 10))
-    #randomList() = [1, 2, 3, 4, 5, 6]
     return randomlist
-
-
 
 
 def updateList(listCountry):
@@ -67,6 +64,7 @@ def updateList(listCountry):
 # return a list of shops with address, longitude and latitude
 def setLocation(lists, country):
     # Shop = [`address`, `longitude`, `latitude`]
+    # shops = [[`address`, `longitude`, `latitude`], [`address`, `longitude`, `latitude`], [`address`, `longitude`, `latitude`]]
     Shops = []
 
     for list in lists:
@@ -263,5 +261,3 @@ print("\nEngland Shop Route")
 route = FindingRoute(egG, len(ENG.shops) - 1)
 routeName(ENG,route)
 getmap(ENG,route,"ENGmap")
-
-
