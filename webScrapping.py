@@ -40,6 +40,7 @@ class Website:
         except:
             text = ""
             print("! No Title Found!!")
+        print("!")
         for x in range(len(doc.body.findAll("p"))):
             line = str(doc.body.findAll("p")[x].text).replace("\n", " ")
             if line != "":
@@ -48,15 +49,15 @@ class Website:
             else:
                 pass
 
-        self.country = "! Data file\\" + self.country + ".txt"
-        print("Creating file at: ", self.country)
+        self.country = "Data file\\" + self.country + ".txt"
+        print("! Creating file at: ", self.country)
         with open(self.country, 'w', encoding="utf-8") as f:
             f.write(text)
 
 
 # read data from excel
 def readExcel(OS):
-    print("Read from Excel...")
+    print("! Read from Excel...")
     if OS == "mac":
         df = pd.read_excel(r'Database//Data.xlsx')
     if OS == "windows":
@@ -70,7 +71,7 @@ def readExcel(OS):
 
 # read data from google sheet
 def readGoogleSheet(OS):
-    print("Read from Google Sheet...")
+    print("! Read from Google Sheet...")
 
     if OS == "mac":
         sa = gspread.service_account("Database//Creds.json")
