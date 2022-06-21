@@ -3,12 +3,10 @@ import csv
 import random
 from geopy import distance
 
-geolocator = Nominatim(user_agent="goole maps")
+geolocator = Nominatim(user_agent="google maps")
 
 
 class Shop:
-    graph = []
-
     def __init__(self, country, address, longitude, latitude):
         self.country = country
         self.address = address
@@ -23,18 +21,25 @@ class Shop:
 
 # This class contains the name of the country and some shops in different location
 class Countries:
-    name = "Name of Contry"
     shops = []
     graph = []
 
-    def __init__(self, country):
-        self.name = country
+    def __init__(self, nameofcountry, countrydetails):
+        self.name = nameofcountry
+        self.rows = countrydetails
+        # short-listed shop based on random list
+        self.shops = setLocation(updateList(countrydetails), nameofcountry)
+        self.graph = setGraph(self.shops)
 
-    def listOfShops(self):
-        pass
+    def getShop(self, index):
+        return self.shops[index]
 
     def getGraph(self):
-        pass
+        print("! Graph for ", self.name, " :")
+        for x in range(len(self.graph)):
+            print("!", x, "- ", self.graph[x])
+        print("!")
+        return self.graph
 
 
 def randomList(listcountry):
@@ -44,15 +49,17 @@ def randomList(listcountry):
 
 
 def updateList(listCountry):
-    newList = []
-    for number in randomList(listCountry):
-        newList.append(listCountry[number])
-    return newList
+    newlist = []
+    turn = randomList(listCountry)
+    for x in range(len(turn)):
+        newlist.append(listCountry[turn[x]])
+    return newlist
 
 
 # return a list of shops with address, longitude and latitude
 def setLocation(lists, country):
     # Shop = [`address`, `longitude`, `latitude`]
+    # shops = [[`address`, `longitude`, `latitude`], [`address`, `longitude`, `latitude`], [`address`, `longitude`, `latitude`]]
     Shops = []
 
     for list in lists:
@@ -60,24 +67,24 @@ def setLocation(lists, country):
         address = str(list[4] + ',' + list[6] + ',' + list[7])
         moonbuck = Shop(country, address, list[11], list[12])
         Shops.append(moonbuck)
-
-    calculateDistance(Shops)
     return Shops
 
 
-def calculateDistance(shops):
-    line = []
-    for shop in shops:
-        shop1 = (shop.latitude, shop.longitude)
-        for x in range(0, len(shops)):
-            shop2 = (shops[x].latitude, shops[x].longitude)
-            line.append((distance.distance(shop1, shop2)).km)
+def setGraph(shop):
+    graph = []
+    temp = []
+    for x in range(len(shop)):
+        shop1 = (shop[x].latitude, shop[x].longitude)
+        for y in range(len(shop)):
+            shop2 = (shop[y].latitude, shop[y].longitude)
+            temp.append((distance.distance(shop1, shop2)).km)
+        graph.append(temp)
+        # to reset the temp array
+        temp = []
+    return graph
 
-        shop.graph.append(line)
-        # to reset line
-        line = []
 
-
+# code start here
 # read dataset of strategic location around the world
 file = open('Database\\directory.csv', encoding='utf-8')
 type(file)
@@ -111,16 +118,16 @@ file.close()
 
 # in configured units (default miles)
 
-USA = setLocation(updateList(USrows), "USA")
-JPN = setLocation(updateList(JProws), "JAPAN")
-UAE = setLocation(updateList(AErows), "UAE")
-CHN = setLocation(updateList(CNrows), "CHINA")
-ENG = setLocation(updateList(EGrows), "ENGLAND")
+# USA = setLocation(updateList(USrows), "USA")
+USA = Countries("USA", USrows)
+JPN = Countries("JAPAN", JProws)
+UAE = Countries("UAE", AErows)
+CHN = Countries("CHINA", CNrows)
+ENG = Countries("ENGLAND", EGrows)
 
 # Show all graph in each country
-usG = USA.pop().getGraph()
-jpG = JPN.pop().getGraph()
-aeG = UAE.pop().getGraph()
-cnG = CHN.pop().getGraph()
-egG = ENG.pop().getGraph()
-
+usG = USA.getGraph()
+jpG = JPN.getGraph()
+aeG = UAE.getGraph()
+cnG = CHN.getGraph()
+egG = ENG.getGraph()
