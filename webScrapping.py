@@ -1,7 +1,10 @@
 import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 import gspread
 import pandas as pd
 from bs4 import BeautifulSoup
+
 OS = ""
 
 
@@ -10,13 +13,15 @@ def extractWebsite(indices, links, countries, sheet):
     if sheet:
         for index in indices:
             i = int(index[0]) % 5
-            Web = Website(links[0], countries[0] + str(i))
+            if i == 0:
+                i = 5
+            Web = Website(links[0], "Data" + index)
             Web.createText()
     else:
         for index in indices:
-            i = int(index) % 5
-            Web = Website(links[int(index) - 1], countries[int(index) - 1] + str(i))
+            Web = Website(links[int(index) - 1], "Data" + index)
             Web.createText()
+
 
 # Extract word from website
 class Website:
@@ -30,22 +35,29 @@ class Website:
         # Make a request
         page = requests.get(self.url)
         doc = BeautifulSoup(page.text, 'html.parser')
-        text = "Title: " + doc.title.text
-
+        try:
+            text = "Title: " + doc.title.text
+        except:
+            text = ""
+            print("! No Title Found!!")
+        print("!")
         for x in range(len(doc.body.findAll("p"))):
             line = str(doc.body.findAll("p")[x].text).replace("\n", " ")
             if line != "":
                 text += line
                 text += "\n"
+            else:
+                pass
 
-        self.country = "Data file//" + self.country + ".txt"
-        with open(self.country, 'w') as f:
+        self.country = "Data file\\" + self.country + ".txt"
+        print("! Creating file at: ", self.country)
+        with open(self.country, 'w', encoding="utf-8") as f:
             f.write(text)
 
 
 # read data from excel
 def readExcel(OS):
-    print("Read from Excel...")
+    print("! Read from Excel...")
     if OS == "mac":
         df = pd.read_excel(r'Database//Data.xlsx')
     if OS == "windows":
@@ -59,8 +71,7 @@ def readExcel(OS):
 
 # read data from google sheet
 def readGoogleSheet(OS):
-    print("Read from Google Sheet...")
-
+    print("! Read from Google Sheet...")
 
     if OS == "mac":
         sa = gspread.service_account("Database//Creds.json")
@@ -80,15 +91,13 @@ def readGoogleSheet(OS):
 # main function
 
 answer = input("Choose your operating system (1-windows/ 2-mac): ")
-if answer == 1:
+if int(answer) == 1:
     OS = "windows"
-    readExcel(OS)
+    # readExcel(OS)
     readGoogleSheet(OS)
-if answer == 2:
+elif int(answer) == 2:
     OS = "mac"
     readExcel(OS)
-    readGoogleSheet(OS)
+    # readGoogleSheet(OS)
 else:
-    print("This Code Cannot Be Supported by Your Operating System")
-
-
+    print("! This Code Cannot Be Supported by Your Operating System")
