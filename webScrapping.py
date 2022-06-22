@@ -12,9 +12,8 @@ OS = ""
 def extractWebsite(indices, links, countries, sheet):
     if sheet:
         for index in indices:
-            i = int(index[0]) % 5
-            if i == 0:
-                i = 5
+            # links = [[url]]
+            # create object Website(links, name of text file)
             Web = Website(links[0], "Data" + index)
             Web.createText()
     else:
@@ -25,15 +24,15 @@ def extractWebsite(indices, links, countries, sheet):
 
 # Extract word from website
 class Website:
-
     # instance attributes
-    def __init__(self, url, country):
+    def __init__(self, url, name):
         self.url = url
-        self.country = country
+        self.name = name
 
     def createText(self):
-        # Make a request
+        # Make a request from website for its html
         page = requests.get(self.url)
+        # module for web scrapping
         doc = BeautifulSoup(page.text, 'html.parser')
         try:
             text = "Title: " + doc.title.text
@@ -41,6 +40,7 @@ class Website:
             text = ""
             print("! No Title Found!!")
         print("!")
+        # find paragraph in the html
         for x in range(len(doc.body.findAll("p"))):
             line = str(doc.body.findAll("p")[x].text).replace("\n", " ")
             if line != "":
@@ -49,9 +49,11 @@ class Website:
             else:
                 pass
 
-        self.country = "Data file\\" + self.country + ".txt"
-        print("! Creating file at: ", self.country)
-        with open(self.country, 'w', encoding="utf-8") as f:
+        # address for text file
+        self.name = "Data file\\" + self.name + ".txt"
+        print("! Creating file at: ", self.name)
+        # Writing the contents of website in the text file
+        with open(self.name, 'w', encoding="utf-8") as f:
             f.write(text)
 
 
@@ -73,6 +75,7 @@ def readExcel(OS):
 def readGoogleSheet(OS):
     print("! Read from Google Sheet...")
 
+    # Credential for extracting the data
     if OS == "mac":
         sa = gspread.service_account("Database//Creds.json")
     if OS == "windows":
@@ -84,12 +87,12 @@ def readGoogleSheet(OS):
     links = sheet.get("B2:B26")
     countries = sheet.get("C2:C26")
 
+    # extract website by line
     for i in range(len(indices)):
         extractWebsite(indices[i], links[i], countries[i], True)
 
 
 # main function
-
 answer = input("Choose your operating system (1-windows/ 2-mac): ")
 if int(answer) == 1:
     OS = "windows"
