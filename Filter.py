@@ -315,7 +315,7 @@ fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
                                       )
                    )
 
-fig.show()
+# fig.show()
 
 #bubble chart
 import plotly.graph_objects as go
@@ -330,7 +330,7 @@ fig_bubble = go.Figure(data=[go.Scatter(
     )
 )])
 
-fig_bubble.show()
+# fig_bubble.show()
 
 
 #pie chart
@@ -340,7 +340,7 @@ import plotly.graph_objects as go
 labels = ['USA','JAPAN','UAE','CHINA', 'ENGLAND']
 values = [totalPosWord[0], totalPosWord[1], totalPosWord[2], totalPosWord[3], totalPosWord[4]]
 fig2 = go.Figure(data=[go.Pie(labels=labels, values=values)])
-fig2.show()
+#fig2.show()
 
 
 #type of word for USA
@@ -348,35 +348,35 @@ labels = ['Positive Words','Negative Word','Neutral Word']
 values = [totalPosWord[0], totalNegWord[0], totalNeuWord[0]]
 fig_USA = go.Figure(data=[go.Pie(labels=labels, values=values)])
 fig_USA.update_layout(title_text='USA all type of words', title_x=0.5)
-fig_USA.show()
+#fig_USA.show()
 
 #type of word for JAPAN
 labels = ['Positive Words','Negative Word','Neutral Word']
 values = [totalPosWord[1], totalNegWord[1], totalNeuWord[1]]
 fig_JPN = go.Figure(data=[go.Pie(labels=labels, values=values)])
 fig_JPN.update_layout(title_text='JAPAN all type of words', title_x=0.5)
-fig_JPN.show()
+#fig_JPN.show()
 
 #type of word for UAE
 labels = ['Positive Words','Negative Word','Neutral Word']
 values = [totalPosWord[2], totalNegWord[2], totalNeuWord[2]]
 fig_UAE = go.Figure(data=[go.Pie(labels=labels, values=values)])
 fig_UAE.update_layout(title_text='UAE all type of words', title_x=0.5)
-fig_UAE.show()
+#fig_UAE.show()
 
 #type of word for CHINA
 labels = ['Positive Words','Negative Word','Neutral Word']
 values = [totalPosWord[3], totalNegWord[3], totalNeuWord[3]]
 fig_CHN = go.Figure(data=[go.Pie(labels=labels, values=values)])
 fig_CHN.update_layout(title_text='CHINA all type of words', title_x=0.5)
-fig_CHN.show()
+#fig_CHN.show()
 
 #type of word for ENGlAND
 labels = ['Positive Words','Negative Word','Neutral Word']
 values = [totalPosWord[4], totalNegWord[4], totalNeuWord[4]]
 fig_ENG = go.Figure(data=[go.Pie(labels=labels, values=values)])
 fig_ENG.update_layout(title_text='ENGLAND all type of words', title_x=0.5)
-fig_ENG.show()
+#fig_ENG.show()
 
 
 
