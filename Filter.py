@@ -41,6 +41,7 @@ class Trie:
 # Read file
 def readFile(extracted, fileName):
     with open(f'Data File\\{fileName}.txt', 'r', encoding="utf-8") as file:
+
         # reading each line
         for line in file:
             # reading each word
@@ -50,7 +51,7 @@ def readFile(extracted, fileName):
 
 
 def readPositiveWords(positiveWords):
-    with open('Database\\positiveWords.txt', 'r') as file:
+    with open('Database//positiveWords.txt', 'r') as file:
 
         # reading each line
         for line in file:
@@ -62,7 +63,7 @@ def readPositiveWords(positiveWords):
 
 
 def readNegativeWords(negativeWords):
-    with open('Database\\negativeWords.txt', 'r') as file:
+    with open('Database//negativeWords.txt', 'r') as file:
 
         # reading each line
         for line in file:
@@ -74,7 +75,7 @@ def readNegativeWords(negativeWords):
 
 
 def readNeutralWords(neutralWords):
-    with open('Database\\neutralWords.txt', 'r') as file:
+    with open('Database//neutralWords.txt', 'r') as file:
 
         # reading each line
         for line in file:
@@ -86,7 +87,7 @@ def readNeutralWords(neutralWords):
 
 
 def readStopWords(stopWords):
-    with open('Database\\stopWords.txt', 'r') as file:
+    with open('Database//stopWords.txt', 'r') as file:
 
         # reading each line
         for line in file:
@@ -110,6 +111,7 @@ def magic(lst):
 
     return restructured
 
+
 totalPosWord = arr.array("i", [])
 totalNegWord = arr.array("i", [])
 totalNeuWord = arr.array("i", [])
@@ -118,6 +120,7 @@ PosWord = 0
 NegWord = 0
 NeuWord = 0
 stopWords = 0
+
 
 # Driver code
 # Call function to read from text file
@@ -150,6 +153,14 @@ for y in range(25):
     stopFound = []
 
     newSentence = []
+
+    positiveCount = [5]
+    negativeCount = [5]
+    neutralCount = [5]
+
+    positiveCounter = 1
+    negativeCounter = 1
+    neutralCounter = 1
 
     # Add stop words into the TRIE
     for i in range(len(stopWords)):
@@ -201,26 +212,61 @@ for y in range(25):
         negativeFound.remove("")
 
     # Write the positive words found into a text file
-    f = open("List\\listPositive.txt", "a")
+    f = open("List//listPositive.txt", "a")
 
     for i in range(len(positiveFound)):
         f.write(positiveFound[i] + ",")
 
+        # Count positive word
+        if (positiveCounter <= 5):
+            positiveCount[0] = positiveCount[0] + 1
+            positiveCounter = positiveCounter + 1
+        elif (positiveCounter <= 10):
+            positiveCount[1] = positiveCount[1] + 1
+            positiveCounter = positiveCounter + 1
+        elif (positiveCounter <= 15):
+            positiveCount[2] = positiveCount[2] + 1
+            positiveCounter = positiveCounter + 1
+        elif (positiveCounter <= 20):
+            positiveCount[4] = positiveCount[4] + 1
+            positiveCounter = positiveCounter + 1
+        elif (positiveCounter <= 25):
+            positiveCount[3] = positiveCount[3] + 1
+            positiveCounter = positiveCounter + 1
+
     f.close()
 
     # Write the negative words found into a text file
-    f = open("List\\listNegative.txt", "a")
+    f = open("List//listNegative.txt", "a")
 
     for i in range(len(negativeFound)):
         f.write(negativeFound[i] + ",")
 
+        # Count negative word
+        if (negativeCounter <= 5):
+            negativeCount[0] = negativeCount[0] + 1
+            negativeCounter = negativeCounter + 1
+        elif (negativeCounter <= 10):
+            negativeCount[1] = negativeCount[1] + 1
+            negativeCounter = negativeCounter + 1
+        elif (negativeCounter <= 15):
+            negativeCount[2] = negativeCount[2] + 1
+            negativeCounter = negativeCounter + 1
+        elif (negativeCounter <= 20):
+            negativeCount[4] = negativeCount[4] + 1
+            negativeCounter = negativeCounter + 1
+        elif (negativeCounter <= 25):
+            negativeCount[3] = negativeCount[3] + 1
+            negativeCounter = negativeCounter + 1
+
     f.close()
 
     # Write the neutral words found into a text file
-    f = open("List\\listNeutral.txt", "a")
+    f = open("List//listNeutral.txt", "a")
 
     for i in range(len(neutralFound)):
         f.write(neutralFound[i] + ",")
+
 
     if y < 5:
         PosWord += len(positiveFound)
@@ -377,7 +423,6 @@ values = [totalPosWord[4], totalNegWord[4], totalNeuWord[4]]
 fig_ENG = go.Figure(data=[go.Pie(labels=labels, values=values)])
 fig_ENG.update_layout(title_text='ENGLAND all type of words', title_x=0.5)
 fig_ENG.show()
-
 
 
 
