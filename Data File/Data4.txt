@@ -1,0 +1,48 @@
+Title: U.S. Economic Outlook for 2022 and BeyondFG Trade / Getty Images
+Kimberly Amadeo is an expert on U.S. and world economies and investing, with over 20 years of experience in economic analysis and business strategy. She is the President of the economic website World Money Watch. As a writer for The Balance, Kimberly provides insight on the state of the present-day economy, as well as past events that have had a lasting impact.
+David J. Rubin is a fact checker for The Balance with more than 30 years in editing and publishing. The majority of his experience lies within the legal and financial spaces. At legal publisher Matthew Bender & Co./LexisNexis, he was a manager of R&D, programmer analyst, and senior copy editor.
+ The U.S. economy exited 2021 in overdrive, but the growth combined with global supply chain constraints has pushed inflation higher than expected. Interest rate hikes were announced in March of 2022, which is predicted to cool the economy. 
+The broadest economic indicator is GDP, which measures the nation's production of goods and services.
+ The economy closed 2021 on a tear, with GDP growing 6.9% in the fourth quarter. Along with the growth came a spike in inflation: 7% year-over-year, much higher than the Federal Reserve's target of 2%. 
+ The unemployment rate at the end of 2021 was just 3.9%, down from 6.4% at the start of the year. Unemployment hit its pandemic peak at 14.7% in April, 2020, when the economy shut down. 
+ The Federal Reserve held the fed funds rate at near zero, and, with the help of its historic purchases of mortgage and Treasury securities, interest rates from home loans to car loans to personal loans were at or near historic lows, fueling economic growth. But at its December 2021 meeting, the Board announced it would reduce its purchases of Treasurys and mortgage-backed securities at accelerated rates (the "taper"), an indicator that higher interest rates were on the horizon. 
+On May 4, the Federal Reserve raised rates half a percentage point, making the target range for the federal funds rate 0.75% to 1%. The Board of Governors indicated that they will likely continue to raise the rates throughout the year to decrease inflation that has been pushed upward by supply chain disruptions caused by COVID-related lockdowns in China and continued Russian attacks on Ukraine.
+ According to the December 2021 forecast released at the Federal Open Market Committee (FOMC) meeting on Dec. 15, U.S. GDP growth was expected to be 4% in 2022. It was estimated to then drop to a 2.2% growth rate in 2023 and slow its growth further to 2% in 2024. In their March 16, 2022, meeting, the Fed modified their former projections, predicting a lower 2.8% increase in GDP in 2022, followed by a 2.2% increase in 2023, and a 2% increase in 2024. 
+ From the same report in March 2022, the Federal Reserve estimated an unemployment rate of 3.5% for 2022. The rate was projected to maintain that level in 2023, and hit 3.6% in 2024. The rate peaked at 14.8% in April 2020 as workers were let go from their jobs in response to the pandemic. 
+ The Bureau of Labor Statistics (BLS) publishes an occupational outlook each year that goes into great detail about each industry and occupation. Overall, the BLS expects total employment to increase by 11.9 million jobs between 2020 and 2030.  
+The BLS 2020 through 2030 projections include the effects of the pandemic on employment, and also structural changes to the economy due to an aging population.
+ Positions in healthcare and social assistance are projected to grow to 3.3 million jobs over the course of the decade, reaching 23.1 million come 2030. The BLS also projects strong growth in the leisure and hospitality industries as businesses make up for ground lost during the pandemic. 
+ On the other hand, most manufacturing and retail industries will continue shedding jobs, while e-commerce continues to grow. Other declines will occur in the consumer rental and the wired communications industries. 
+ The core inflation rate is predicted to be 4.1% in 2022, dropping to 2.6% in 2023 and 2.3% in 2024. The Fed's target inflation rate is 2%. The core inflation rate—the Fed's preferred rate when setting monetary policy—strips out volatile gas and food prices. 
+ In March 2020, the FOMC held an emergency meeting to address the economic impact of the COVID-19 pandemic, which lowered the fed funds rate to a range of 0% and 0.25%. At its March 16, 2022 meeting, the FOMC announced that it would be raising interest rates for the first time since 2018, in order to combat rising inflation. The target range was increased by 0.25% (25 basis points), from 0% to 0.25% to 0.25% to 0.50%. 
+ In its March 2022 projections, the FOMC estimated a steady rise in the target fed funds rate to 1.9% in 2022. The projected target rate rises to 2.8% in 2023 and 2024. 
+The fed funds rate controls short-term interest rates. These include banks' prime rate, most adjustable-rate loans, and credit card rates.
+ The Fed has been working on keeping long-term rates low in an effort to make borrowing money cheaper, and in turn encourage consumer and business spending. It restarted its quantitative easing (QE) program, and soon expanded QE purchases to an unlimited amount. In March 2020, the Federal Reserve announced it would purchase $500 billion in U.S. Treasuries and $200 billion in mortgage-backed securities, too. 
+ By June 2020, its balance sheet had grown to a record of $7.2 trillion. A year later, in June 2021, that number had reached $8.1 trillion and by December 2021 it had reached nearly $9 trillion. 
+ By buying bank securities, the Fed reduces supply in the Treasury market, which increases the prices and lowers the return (or yield) on these long-term notes. Those yields set the benchmark for long-term fixed-rate mortgages and corporate bonds. 
+ Treasury yields also depend on the demand for the dollar. High demand puts downward pressure on yields. Once the global economy recovers, investors may demand less of this ultra-safe investment, increasing yields and interest rates. 
+ The EIA's energy outlook through 2050 predicts rising oil prices. According to the data, the average Brent oil price could increase to a high of $170 per barrel in 2050, in constant 2021 dollars. This forecast does not take into account government efforts to increase renewable energy production in an effort to stop global warming. 
+ The Federal Reserve is concerned about how climate change will affect the economy. Research from the Richmond Fed estimates that, if the country continues to produce emissions at a high rate, climate change could reduce the annual GDP growth rate by up to a third of the historical average. 
+ In 2020, the U.S. experienced damage from both hurricanes and wildfires, as it has in past years. Global damage from natural disasters associated with climate change, such as hurricanes, floods, and wildfires, was $210 billion in 2020, up significantly from $166 billion in 2019. 
+ In the U.S., losses covered by insurance totaled $82 billion in 2020 and $57 billion in 2019. Damage claims have become worse and more frequent due to global warming. There were 980 natural disasters in 2020, compared to 860 in 2019. 
+The U.S. economy is a mixed economy. The U.S. government encourages free market activity, but it occasionally intervenes in the market, like with the Fed's quantitative easing programs.
+Money can refer to dollars in circulation, or credit in the economy, but GDP can be more easily measured in exact dollar figures. In recent years, the U.S. GDP has remained above $21 trillion, aside from a dip during the onset of the COVID-19 pandemic in 2020.
+Board of Governors of the Federal Reserve System. "Federal Reserve Issues FOMC Statement, March 16, 2022."
+Bureau of Economic Analysis. “National Income and Product Accounts: Table 1.1.1. Percent Change From Preceding Period in Real Gross Domestic Product.”
+Bureau of Labor Statistics. "Consumer Price Index - December 2021."
+Bureau of Labor Statistics. "Civilian Unemployment Rate."
+Board of Governors of the Federal Reserve System. "Federal Reserve Issues FOMC Statement, Dec. 15, 2021."
+Board of Governors of the Federal Reserve System. "Federal Reserve Issues FOMC Statement.”
+Board of Governors of the Federal Reserve System. "December 15, 2021: Summary of Economic Projections."
+Board of Governors of the Federal Reserve System. "March 16, 2022: Summary of Economic Projections."
+Bureau of Labor Statistics. "Labor Force Statistics From the Current Population Survey."
+Bureau of Labor Statistics. “Projections Overview and Highlights, 2020 to 2030.”
+Board of Governors of the Federal Reserve System. "Why Does the Federal Reserve Aim for Inflation of 2 Percent Over the Longer Run?"
+Board of Governors of the Federal Reserve System. "Federal Reserves Issues FOMC Statement, March 15, 2020."
+Board of Governors of the Federal Reserve System. "Open Market Operations."
+Board of Governors of the Federal Reserve System."Federal Reserve Announces Extensive New Measures To Support the Economy."
+Board of Governors of the Federal Reserve System. "Credit and Liquidity Programs and the Balance Sheet."
+U.S. Energy Information Administration. “Annual Energy Outlook 2022,” Page 3.
+Federal Reserve Bank of Richmond. "The Impact of Higher Temperatures on Economic Growth," Page 4.
+Insurance Information Institute. “Facts and Statistics: Global Catastrophes.”
+Bureau of Economic Analysis. "National Income and Product Accounts: Table 1.1.5. Gross Domestic Product."
