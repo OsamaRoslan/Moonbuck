@@ -315,7 +315,7 @@ fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
                                       )
                    )
 
-# fig.show()
+fig.show()
 
 #bubble chart
 import plotly.graph_objects as go
