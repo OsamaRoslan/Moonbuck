@@ -369,7 +369,7 @@ labels = ['Positive Words','Negative Word','Neutral Word']
 values = [totalPosWord[3], totalNegWord[3], totalNeuWord[3]]
 fig_CHN = go.Figure(data=[go.Pie(labels=labels, values=values)])
 fig_CHN.update_layout(title_text='CHINA all type of words', title_x=0.5)
-#fig_CHN.show()
+fig_CHN.show()
 
 #type of word for ENGlAND
 labels = ['Positive Words','Negative Word','Neutral Word']
