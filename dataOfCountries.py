@@ -237,7 +237,6 @@ row = len(USA.shops) - 1
 print("USA Shop Route")
 route = FindingRoute(usG, len(USA.shops) - 1)
 routeName(USA, route)
-sys.setrecursionlimit(9999999)
 getmap(USA, route, "html file\\USAmap")
 
 print("\nJapan Shop Route")

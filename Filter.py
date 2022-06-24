@@ -303,81 +303,77 @@ alltype = [totalPosWord,totalNegWord,totalNeuWord]
 type_word = ["Positive", "Negative", "Neutral", "Stop"]
 
 
+if __name__ == "__main__":
+    import plotly.express as px
 
-import plotly.express as px
+    #bar chart for all variable
+    fig = px.histogram(data_frame=None, x=Countries, y=alltype, title="Histogram of Countries over Word Count")
+    newnames = {'wide_variable_0':'Positive words', 'wide_variable_1': 'Negative words', 'wide_variable_2': 'Neutral words', 'wide_variable_3': 'Stop words'}
+    fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
+                                          legendgroup = newnames[t.name],
+                                          hovertemplate = t.hovertemplate.replace(t.name, newnames[t.name])
+                                          )
+                       )
 
-#bar chart for all variable
-fig = px.histogram(data_frame=None, x=Countries, y=alltype, title="Histogram of Countries over Word Count")
-newnames = {'wide_variable_0':'Positive words', 'wide_variable_1': 'Negative words', 'wide_variable_2': 'Neutral words', 'wide_variable_3': 'Stop words'}
-fig.for_each_trace(lambda t: t.update(name = newnames[t.name],
-                                      legendgroup = newnames[t.name],
-                                      hovertemplate = t.hovertemplate.replace(t.name, newnames[t.name])
-                                      )
-                   )
+    #fig.show()
 
-fig.show()
+    #bubble chart
+    import plotly.graph_objects as go
+    fig_bubble = go.Figure(data=[go.Scatter(
+        x=Countries, y=alltype,
+        mode='markers',
+        marker = dict(
+            color=['rgb(93, 164, 214)', 'rgb(255, 144, 14)',
+                   'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+            opacity=[1, 0.8, 0.6, 0.4],
+            size=[90, 80, 40, 60, 30],
+        )
+    )])
 
-#bubble chart
-import plotly.graph_objects as go
-fig_bubble = go.Figure(data=[go.Scatter(
-    x=Countries, y=alltype,
-    mode='markers',
-    marker = dict(
-        color=['rgb(93, 164, 214)', 'rgb(255, 144, 14)',
-               'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
-        opacity=[1, 0.8, 0.6, 0.4],
-        size=[90, 80, 40, 60, 30],
-    )
-)])
-
-# fig_bubble.show()
-
-
-#pie chart
-import plotly.graph_objects as go
-
-#positive word percentage of all country
-labels = ['USA','JAPAN','UAE','CHINA', 'ENGLAND']
-values = [totalPosWord[0], totalPosWord[1], totalPosWord[2], totalPosWord[3], totalPosWord[4]]
-fig2 = go.Figure(data=[go.Pie(labels=labels, values=values)])
-#fig2.show()
+    # fig_bubble.show()
 
 
-#type of word for USA
-labels = ['Positive Words','Negative Word','Neutral Word']
-values = [totalPosWord[0], totalNegWord[0], totalNeuWord[0]]
-fig_USA = go.Figure(data=[go.Pie(labels=labels, values=values)])
-fig_USA.update_layout(title_text='USA all type of words', title_x=0.5)
-#fig_USA.show()
+    #pie chart
+    import plotly.graph_objects as go
 
-#type of word for JAPAN
-labels = ['Positive Words','Negative Word','Neutral Word']
-values = [totalPosWord[1], totalNegWord[1], totalNeuWord[1]]
-fig_JPN = go.Figure(data=[go.Pie(labels=labels, values=values)])
-fig_JPN.update_layout(title_text='JAPAN all type of words', title_x=0.5)
-#fig_JPN.show()
-
-#type of word for UAE
-labels = ['Positive Words','Negative Word','Neutral Word']
-values = [totalPosWord[2], totalNegWord[2], totalNeuWord[2]]
-fig_UAE = go.Figure(data=[go.Pie(labels=labels, values=values)])
-fig_UAE.update_layout(title_text='UAE all type of words', title_x=0.5)
-#fig_UAE.show()
-
-#type of word for CHINA
-labels = ['Positive Words','Negative Word','Neutral Word']
-values = [totalPosWord[3], totalNegWord[3], totalNeuWord[3]]
-fig_CHN = go.Figure(data=[go.Pie(labels=labels, values=values)])
-fig_CHN.update_layout(title_text='CHINA all type of words', title_x=0.5)
-fig_CHN.show()
-
-#type of word for ENGlAND
-labels = ['Positive Words','Negative Word','Neutral Word']
-values = [totalPosWord[4], totalNegWord[4], totalNeuWord[4]]
-fig_ENG = go.Figure(data=[go.Pie(labels=labels, values=values)])
-fig_ENG.update_layout(title_text='ENGLAND all type of words', title_x=0.5)
-#fig_ENG.show()
+    #positive word percentage of all country
+    labels = ['USA','JAPAN','UAE','CHINA', 'ENGLAND']
+    values = [totalPosWord[0], totalPosWord[1], totalPosWord[2], totalPosWord[3], totalPosWord[4]]
+    fig2 = go.Figure(data=[go.Pie(labels=labels, values=values)])
+    #fig2.show()
 
 
+    #type of word for USA
+    labels = ['Positive Words','Negative Word','Neutral Word']
+    values = [totalPosWord[0], totalNegWord[0], totalNeuWord[0]]
+    fig_USA = go.Figure(data=[go.Pie(labels=labels, values=values)])
+    fig_USA.update_layout(title_text='USA all type of words', title_x=0.5)
+    #fig_USA.show()
 
+    #type of word for JAPAN
+    labels = ['Positive Words','Negative Word','Neutral Word']
+    values = [totalPosWord[1], totalNegWord[1], totalNeuWord[1]]
+    fig_JPN = go.Figure(data=[go.Pie(labels=labels, values=values)])
+    fig_JPN.update_layout(title_text='JAPAN all type of words', title_x=0.5)
+    #fig_JPN.show()
 
+    #type of word for UAE
+    labels = ['Positive Words','Negative Word','Neutral Word']
+    values = [totalPosWord[2], totalNegWord[2], totalNeuWord[2]]
+    fig_UAE = go.Figure(data=[go.Pie(labels=labels, values=values)])
+    fig_UAE.update_layout(title_text='UAE all type of words', title_x=0.5)
+    #fig_UAE.show()
+
+    #type of word for CHINA
+    labels = ['Positive Words','Negative Word','Neutral Word']
+    values = [totalPosWord[3], totalNegWord[3], totalNeuWord[3]]
+    fig_CHN = go.Figure(data=[go.Pie(labels=labels, values=values)])
+    fig_CHN.update_layout(title_text='CHINA all type of words', title_x=0.5)
+    #fig_CHN.show()
+
+    #type of word for ENGlAND
+    labels = ['Positive Words','Negative Word','Neutral Word']
+    values = [totalPosWord[4], totalNegWord[4], totalNeuWord[4]]
+    fig_ENG = go.Figure(data=[go.Pie(labels=labels, values=values)])
+    fig_ENG.update_layout(title_text='ENGLAND all type of words', title_x=0.5)
+    #fig_ENG.show()

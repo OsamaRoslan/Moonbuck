@@ -4,6 +4,7 @@
 #######################   Calculate the probability ##########################################
 
 from Filter import totalPosWord, totalNegWord, totalNeuWord, Countries
+from dataOfCountries import USA, JPN, UAE, CHN, ENG
 
 
 totalPosWordAll = sum(totalPosWord)
